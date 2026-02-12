@@ -1,0 +1,82 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>var localFn = window.console.log;window.console.log = function(){};window.__resetConsole = function (){ window.console.log = localFn};window.onerror = function (msg, sourceUrl, lineno, colno, error) {
+            if (typeof msg == "string" && msg.indexOf("insetUpdated") != -1) {
+              return false;
+            }
+            if (window.parent.Analytics && typeof window.parent.Analytics.trackExceptionError == "function") {
+              const errorData = JSON.stringify({
+                name: error && error.name ? error.name : "Script Error.",
+                error_message: msg,
+                url: sourceUrl,
+                lineno,
+                colno,
+                error: true,
+                microapp: "in.juspay.ec"
+              });
+              const stack = error && typeof error.stack == "string" ? error.stack : "stack not available";
+              window.parent.Analytics.trackExceptionError("Uncaught Exception")(stack)(errorData)();
+            }
+            return false;
+          };window.__payload = window.parent.PayloadHolder['in.juspay.ec'];window.JOS = window.parent.JOSHolder['in.juspay.ec'];window.Android = window.parent.Android;window.JBridge = window.parent.JBridge;window.__OS = "web";window.parent.serverSideKeys['in.juspay.ec'].loadMicroappAssetsSSR();</script><script id="hyper-pay-config">(()=>{var __webpack_exports__={};window.config_version="1.1.8",window.ec_headless_config_version=window.config_version;var merchantId="";try{var variables=JBridge.getConfigVariables();console.log("config: "+variables),eval(variables),merchantId=clientId&&"null"!=clientId?clientId.split("_")[0]:""}catch(e){console.error(e)}var clientId="";try{clientId=window.__payload.client_id||window.__payload.payload&&window.__payload.payload.clientId}catch(e){console.error(e)}var forceGPAYIntentClientIds=["netmeds_android"],forceGPAYIntent=function(){return-1!=forceGPAYIntentClientIds.indexOf(clientId)},gpayAllowedMethodsFunc=function(){try{var e=window.__payload.payload.clientId;return"picasso_android"===e?(console.log(e," config"),["UPI","CARD"]):(console.log(e," config"),["UPI"])}catch(e){return console.log(e," Returning UPI"),["UPI"]}},getPollingConfig=function(){try{switch(window.__payload.payload.clientId){case"zoomin_android":case"ixigoprod_android":case"1mg_android":case"Symbol_android":case"udit_juspay_android":case"vies_ola_android":case"tendercuts_android":case"zoomin_test_android":case"Gaana_android":case"gaana_android":case"zoomin_ios":case"ixigoprod_ios":case"1mg_ios":case"Symbol_ios":case"udit_juspay_ios":case"vies_ola_ios":case"tendercuts_ios":case"zoomin_test_ios":case"Gaana_ios":case"gaana_ios":case"com.swiggy_ios":case"curefit_android":case"curefit_ios":case"trulymadly_android":return{duration:3e5,repeat:5e3};default:return{duration:3e3,repeat:5e3}}}catch(e){return console.log("Returning default"),{duration:3e3,repeat:5e3}}},getEncryptionConfig=function(){try{var e="sandbox"==window.__payload.payload.environment?"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAizgY4XSKoSmDoSK5g5MaJS9hZvX5C6rgSYQui9rbdBw+WZq2pRSV6MDMJQFTb9grXx3Ztj1wt1ESN5VAA5Gff2EO77ffiUtX716dYNq7NfOM3y8ssQ3Kh02Ow1xnlb9vc3gRfG+LpblCEa+vE+2foZa1/AhbRuZkvferOjB3YwacUVc0y25gO9HIL9iGd8aCl2cVhvFg3NOfJRQK3yhv1mEar2k3AqGDj95Vw/stWytYFLDFzwU3xYlHxb3vNLunbMlfxCqluveOBh2huGEhb0QNT4pSBK2UVaCZmukjcTXKD0c97brip2ZOHLo50V+njxn46mq6gJfE7RKFjPd5/QIDAQAB":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzHHLFnOqJ2LjHcAI1WvF6mpNv2zeokY0DbX46W/P4Rc6AVBg5CUcLPYjLed32qtQaHK6PhPsTwtTN9QLczhN6X9mp+1GK5Yxm/1DOC2PsvSkF3ZacSFYx1KHDVRjG3dPPj+fe3EBXkktOG/yVRbo0LlIaVk+6mEfI9Tn0+9SBJ+1y7y4EBGc+Wd/A5tN5dKJrzsuoQYuI9tKEtAIGsiHp93vYIKr2bDTV2Kl+iqzcQAJIqOOxVTahDGv9qDurSrm6wrs3XCoeCSWGiLB/MKqYdPzgYD2uctPkGAxmRCKshMXlIveRfskMTa562K72d5ZKsc1ehkEnQ8M8yzQ4f4QMQIDAQAB";switch(clientId){case"croma":case"croma_web":return{key:e,version:"2021-01-22"};default:return{key:"",version:""}}}catch(e){return console.log("Exception in getEncryptionConfig",e),{key:"",version:""}}},getFullPageBins=function(){if(-1!=(window.__payload&&window.__payload.payload&&window.__payload.payload.clientId).indexOf("vodaidea"))return["459200","416021","485498"];var e="";try{e=JSON.parse(JBridge.getSessionDetails()).merchantId}catch(e){}return-1!=e.indexOf("okcredit")?["459115","478679","416021","459200","459156","479947"]:-1!=e.indexOf("urbanclap")&&-1!=e.indexOf("provider")?["478679","416021","459115","459200","459156","438624"]:"astroyogi"==e?["459156","478679","405988","459155","459200","416021","459115"]:[]},shouldEnableFullPageGodel=function(){if("ANDROID"!=window.__OS)return!1;var e="";if(-1!=(window.__payload&&window.__payload.payload&&window.__payload.payload.clientId).indexOf("vodaidea"))return!0;try{e=JSON.parse(JBridge.getSessionDetails()).merchantId}catch(e){}return"astroyogi"==e||-1!=e.indexOf("okcredit")||-1!=e.indexOf("urbanclap")&&-1!=e.indexOf("provider")},getConsentConfig=function(){try{return window.__payload.payload.clientId,{consentEnabled:!1,forceConsent:!1}}catch(e){return console.log("Returning catch block consent config"),{consentEnabled:!1,forceConsent:!1}}},txnRetryConfig=function(){return{numberOfRetries:3,retryForNetworkCode:["-3","-1"],delay:50}},getTimeout=function(){var e={"/txns":{readTimeout:7e3,connectionTimeout:7e3},"/order/payment-status":{readTimeout:7e3,connectionTimeout:7e3},"/sdk/v2/savedPaymentMethods":{readTimeout:7e3,connectionTimeout:7e3},"/sdk/v1/savedPaymentMethods":{readTimeout:7e3,connectionTimeout:7e3},"/eligibility":{readTimeout:7e3,connectionTimeout:7e3}};return-1!==window.__payload.payload.clientId.indexOf("irctc")&&(e["/txns"]={readTimeout:37e3,connectionTimeout:37e3},e["/order/payment-status"]={readTimeout:2500,connectionTimeout:2500},e["/sdk/v2/savedPaymentMethods"]={readTimeout:5e3,connectionTimeout:5e3},e["/sdk/v1/savedPaymentMethods"]={readTimeout:2500,connectionTimeout:2500},e["/eligibility"]={readTimeout:2e3,connectionTimeout:2e3}),e},getOrderStatusConfig=function(){try{return!!window.__payload.payload.clientId.includes("slice")}catch(e){return console.log("Returning default order config"),!1}},defaultConfig=function(){return{payment_methods:["CARD","NB","UPI","CASH","WALLET"],wallet_config:[{wallet:"PHONEPE",nature:"SDK",method:""},{wallet:"PAYTM",nature:"DIRECT",method:""},{wallet:"AMAZONPAY",nature:"SDK",method:"TOKENIZED"}],otp_page_enabled:!1,upi_sdk_enabled:!0,force_gpay_intent:forceGPAYIntent(),mandate_vpas:["@upi","@paytm"],gpayAllowedMethods:gpayAllowedMethodsFunc(),pollingConfig:getPollingConfig(),allowed_apps_for_merchant:{Symbol:["cred"],zoomin_test:["cred"],zoomin:["cred"],ixigoprod:["cred"],"1mg":["cred"],udit_juspay:["cred"],vies_ola:["cred"],tendercuts:["cred"],Gaana:["cred"],gaana:["cred"]},package_name_for_app2app_communication:{cred_sandbox:"com.dreamplug.androidapp.dev",cred:"com.dreamplug.androidapp"},shouldAllowEligibilityInInitiate:["Symbol","zoomin_test","zoomin","udit_juspay"],keys:{sandbox:{credKey:"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAizgY4XSKoSmDoSK5g5MaJS9hZvX5C6rgSYQui9rbdBw+WZq2pRSV6MDMJQFTb9grXx3Ztj1wt1ESN5VAA5Gff2EO77ffiUtX716dYNq7NfOM3y8ssQ3Kh02Ow1xnlb9vc3gRfG+LpblCEa+vE+2foZa1/AhbRuZkvferOjB3YwacUVc0y25gO9HIL9iGd8aCl2cVhvFg3NOfJRQK3yhv1mEar2k3AqGDj95Vw/stWytYFLDFzwU3xYlHxb3vNLunbMlfxCqluveOBh2huGEhb0QNT4pSBK2UVaCZmukjcTXKD0c97brip2ZOHLo50V+njxn46mq6gJfE7RKFjPd5/QIDAQAB"},prod:{credKey:"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzHHLFnOqJ2LjHcAI1WvF6mpNv2zeokY0DbX46W/P4Rc6AVBg5CUcLPYjLed32qtQaHK6PhPsTwtTN9QLczhN6X9mp+1GK5Yxm/1DOC2PsvSkF3ZacSFYx1KHDVRjG3dPPj+fe3EBXkktOG/yVRbo0LlIaVk+6mEfI9Tn0+9SBJ+1y7y4EBGc+Wd/A5tN5dKJrzsuoQYuI9tKEtAIGsiHp93vYIKr2bDTV2Kl+iqzcQAJIqOOxVTahDGv9qDurSrm6wrs3XCoeCSWGiLB/MKqYdPzgYD2uctPkGAxmRCKshMXlIveRfskMTa562K72d5ZKsc1ehkEnQ8M8yzQ4f4QMQIDAQAB"}},intentPolling:{duration:12e3,repeat:3e3},collectPolling:{duration:6e3,repeat:1500},encryptionConfig:getEncryptionConfig(),fullPageGodel:{enabled:!1,percentage:100,enabledOn:[],bins:getFullPageBins()},isConsentEnabled:getConsentConfig().consentEnabled,isConsentForced:getConsentConfig().forceConsent,tokenizationFlows:{THREE_DS:!0,OTP:!0},enableApplePayUI:["azhar_test","lenskart"],txnRetryConfig:txnRetryConfig(),timeoutConfig:getTimeout(),allowOrderStatusForInapp:getOrderStatusConfig()}};window.getConfig=defaultConfig})();</script><script>try{window.__OS="WEB";window.Android=window.parent.Android;window.JBridge=window.parent.JBridge;}catch(e){}</script><script type="text/javascript" id="hyperpay_config" src="https://assets.juspay.in/hyper/configs/croma/in.juspay.hyperpay/1.111.1/configuration.js"></script><script type="text/javascript" id="config"></script></head><body><script id="main-script" src="https://assets.juspay.in/hyper/bundles/app/in.juspay.ec/4.3.16/web/index.js"></script><script>
+      (function(){
+        var mainScript = document.getElementById("main-script");
+        mainScript.addEventListener("load", function(){ const logDownloadStatus = function(status, retryCount){
+    if(window.JOS && window.JOS.tracker && window.JOS.tracker._trackLifeCycle){
+      let latency = Date.now() - (window.parent.iframeTimeCheck && typeof window.parent.iframeTimeCheck === "object"
+      ? Object.keys(window.parent.iframeTimeCheck).reduce(
+          (acc, key) =>
+            "https://assets.juspay.in/hyper/bundles/app/in.juspay.ec/4.3.16/web/index.js".includes(key) && acc === undefined
+              ? window.parent.iframeTimeCheck[key]
+              : acc,
+          undefined
+        )
+      : undefined);
+      window.JOS.tracker._trackLifeCycle("hypersdk")("info")("script_download_status")({fileName: "https://assets.juspay.in/hyper/bundles/app/in.juspay.ec/4.3.16/web/index.js", status, retryCount, latency})();
+    }
+  };
+                      logDownloadStatus("Script Loaded Successfully", 0); });
+        mainScript.addEventListener("error", function(){ const logDownloadStatus = function(status, retryCount){
+    if(window.JOS && window.JOS.tracker && window.JOS.tracker._trackLifeCycle){
+      let latency = Date.now() - (window.parent.iframeTimeCheck && typeof window.parent.iframeTimeCheck === "object"
+      ? Object.keys(window.parent.iframeTimeCheck).reduce(
+          (acc, key) =>
+            "https://assets.juspay.in/hyper/bundles/app/in.juspay.ec/4.3.16/web/index.js".includes(key) && acc === undefined
+              ? window.parent.iframeTimeCheck[key]
+              : acc,
+          undefined
+        )
+      : undefined);
+      window.JOS.tracker._trackLifeCycle("hypersdk")("info")("script_download_status")({fileName: "https://assets.juspay.in/hyper/bundles/app/in.juspay.ec/4.3.16/web/index.js", status, retryCount, latency})();
+    }
+  };
+                        let retryCount = 0;
+                        let loadAgain = function(){
+                          retryCount = retryCount + 1;
+                          logDownloadStatus("Script caused error retrying", retryCount);
+                          let s = document.createElement("script");
+
+
+                          if("undefined"){
+                            s.text = "undefined";
+                          } else {
+                            s.src = "https://assets.juspay.in/hyper/bundles/app/in.juspay.ec/4.3.16/web/index.js";
+                          }
+                            
+                          
+
+                          if(retryCount <4){
+                            s.addEventListener("error", loadAgain);
+                          } else{
+                            s.addEventListener("error", function(e){
+                              logDownloadStatus("Script Retry Failed", retryCount);
+                            });
+                          }
+                          s.addEventListener("load", function(){
+                            logDownloadStatus("Script Retry Successfull", retryCount);
+                          });
+                          document.body.appendChild(s);
+                        }
+                        loadAgain(); });
+      })();
+    </script></body></html>

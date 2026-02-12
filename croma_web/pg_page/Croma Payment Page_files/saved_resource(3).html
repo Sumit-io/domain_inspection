@@ -1,0 +1,82 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>var localFn = window.console.log;window.console.log = function(){};window.__resetConsole = function (){ window.console.log = localFn};window.onerror = function (msg, sourceUrl, lineno, colno, error) {
+            if (typeof msg == "string" && msg.indexOf("insetUpdated") != -1) {
+              return false;
+            }
+            if (window.parent.Analytics && typeof window.parent.Analytics.trackExceptionError == "function") {
+              const errorData = JSON.stringify({
+                name: error && error.name ? error.name : "Script Error.",
+                error_message: msg,
+                url: sourceUrl,
+                lineno,
+                colno,
+                error: true,
+                microapp: "in.juspay.dotp"
+              });
+              const stack = error && typeof error.stack == "string" ? error.stack : "stack not available";
+              window.parent.Analytics.trackExceptionError("Uncaught Exception")(stack)(errorData)();
+            }
+            return false;
+          };window.__payload = window.parent.PayloadHolder['in.juspay.dotp'];window.JOS = window.parent.JOSHolder['in.juspay.dotp'];window.Android = window.parent.Android;window.JBridge = window.parent.JBridge;window.__OS = "web";</script><script>try{window.__OS="WEB";window.Android=window.parent.Android;window.JBridge=window.parent.JBridge;}catch(e){}</script></head><body><script id="main-script" src="https://assets.juspay.in/hyper/bundles/app/in.juspay.dotp/5.0.58/web/index.js"></script><script>
+      (function(){
+        var mainScript = document.getElementById("main-script");
+        mainScript.addEventListener("load", function(){ const logDownloadStatus = function(status, retryCount){
+    if(window.JOS && window.JOS.tracker && window.JOS.tracker._trackLifeCycle){
+      let latency = Date.now() - (window.parent.iframeTimeCheck && typeof window.parent.iframeTimeCheck === "object"
+      ? Object.keys(window.parent.iframeTimeCheck).reduce(
+          (acc, key) =>
+            "https://assets.juspay.in/hyper/bundles/app/in.juspay.dotp/5.0.58/web/index.js".includes(key) && acc === undefined
+              ? window.parent.iframeTimeCheck[key]
+              : acc,
+          undefined
+        )
+      : undefined);
+      window.JOS.tracker._trackLifeCycle("hypersdk")("info")("script_download_status")({fileName: "https://assets.juspay.in/hyper/bundles/app/in.juspay.dotp/5.0.58/web/index.js", status, retryCount, latency})();
+    }
+  };
+                      logDownloadStatus("Script Loaded Successfully", 0); });
+        mainScript.addEventListener("error", function(){ const logDownloadStatus = function(status, retryCount){
+    if(window.JOS && window.JOS.tracker && window.JOS.tracker._trackLifeCycle){
+      let latency = Date.now() - (window.parent.iframeTimeCheck && typeof window.parent.iframeTimeCheck === "object"
+      ? Object.keys(window.parent.iframeTimeCheck).reduce(
+          (acc, key) =>
+            "https://assets.juspay.in/hyper/bundles/app/in.juspay.dotp/5.0.58/web/index.js".includes(key) && acc === undefined
+              ? window.parent.iframeTimeCheck[key]
+              : acc,
+          undefined
+        )
+      : undefined);
+      window.JOS.tracker._trackLifeCycle("hypersdk")("info")("script_download_status")({fileName: "https://assets.juspay.in/hyper/bundles/app/in.juspay.dotp/5.0.58/web/index.js", status, retryCount, latency})();
+    }
+  };
+                        let retryCount = 0;
+                        let loadAgain = function(){
+                          retryCount = retryCount + 1;
+                          logDownloadStatus("Script caused error retrying", retryCount);
+                          let s = document.createElement("script");
+
+
+                          if("undefined"){
+                            s.text = "undefined";
+                          } else {
+                            s.src = "https://assets.juspay.in/hyper/bundles/app/in.juspay.dotp/5.0.58/web/index.js";
+                          }
+                            
+                          
+
+                          if(retryCount <4){
+                            s.addEventListener("error", loadAgain);
+                          } else{
+                            s.addEventListener("error", function(e){
+                              logDownloadStatus("Script Retry Failed", retryCount);
+                            });
+                          }
+                          s.addEventListener("load", function(){
+                            logDownloadStatus("Script Retry Successfull", retryCount);
+                          });
+                          document.body.appendChild(s);
+                        }
+                        loadAgain(); });
+      })();
+    </script></body></html>

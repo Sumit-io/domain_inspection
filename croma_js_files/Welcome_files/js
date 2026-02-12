@@ -1,0 +1,64 @@
+var ProcessingService=function() {
+ProcessingService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+ProcessingService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return ProcessingService._staticInstance.get_path();},
+HelloWorld:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'HelloWorld',false,{},succeededCallback,failedCallback,userContext); },
+ResetSelfServicePin:function(SelfServicePin,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ResetSelfServicePin',false,{SelfServicePin:SelfServicePin},succeededCallback,failedCallback,userContext); },
+ResetCardPin:function(curPin,newPin,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ResetCardPin',false,{curPin:curPin,newPin:newPin},succeededCallback,failedCallback,userContext); },
+UpdateCustomerDetails:function(salutation,firstName,lastName,DOB,gender,anniversary,Address1,Address2,Address3,Mobile,Mobile1,Mobile2,Mobile3,Phone,Phone1,Phone2,Phone3,Email,Email1,Email2,EmpId,Area,Pincode,CityId,StateId,CountryId,CorporateId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'UpdateCustomerDetails',false,{salutation:salutation,firstName:firstName,lastName:lastName,DOB:DOB,gender:gender,anniversary:anniversary,Address1:Address1,Address2:Address2,Address3:Address3,Mobile:Mobile,Mobile1:Mobile1,Mobile2:Mobile2,Mobile3:Mobile3,Phone:Phone,Phone1:Phone1,Phone2:Phone2,Phone3:Phone3,Email:Email,Email1:Email1,Email2:Email2,EmpId:EmpId,Area:Area,Pincode:Pincode,CityId:CityId,StateId:StateId,CountryId:CountryId,CorporateId:CorporateId},succeededCallback,failedCallback,userContext); },
+UpdateExtendedCustomerDetails:function(Qualification,Profession,Designation,ORGANIZATION,SALARY,MARITALSTATUS,FOODPREFERENCE,HOBBIES,ANNIVERSARY,OCCASION_FINAL,SPOUSESALUTATION,SPOUSEFIRSTNAME,SPOUSELASTNAME,SPOUSEDOB,SPOUSEPROFESSION,SPOUSESALARY,SPOUSEFOODPREFERENCE,FIRSTDEPENDENTFIRSTNAME,FIRSTDEPENDENTLASTNAME,FIRSTDEPENDENTDOB,SECONDDEPENDENTFIRSTNAME,SECONDEPENDENTLASTNAME,SECONDDEPENDENTDOB,SPOUSEQUALIFICATION,ShirtSize,WaistSize,FreqBhtApp,BestDesDressingAtWork,CasualBrand,Occupation,Profession_Category,ContactPreference,MusicType,NextGadget,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'UpdateExtendedCustomerDetails',false,{Qualification:Qualification,Profession:Profession,Designation:Designation,ORGANIZATION:ORGANIZATION,SALARY:SALARY,MARITALSTATUS:MARITALSTATUS,FOODPREFERENCE:FOODPREFERENCE,HOBBIES:HOBBIES,ANNIVERSARY:ANNIVERSARY,OCCASION_FINAL:OCCASION_FINAL,SPOUSESALUTATION:SPOUSESALUTATION,SPOUSEFIRSTNAME:SPOUSEFIRSTNAME,SPOUSELASTNAME:SPOUSELASTNAME,SPOUSEDOB:SPOUSEDOB,SPOUSEPROFESSION:SPOUSEPROFESSION,SPOUSESALARY:SPOUSESALARY,SPOUSEFOODPREFERENCE:SPOUSEFOODPREFERENCE,FIRSTDEPENDENTFIRSTNAME:FIRSTDEPENDENTFIRSTNAME,FIRSTDEPENDENTLASTNAME:FIRSTDEPENDENTLASTNAME,FIRSTDEPENDENTDOB:FIRSTDEPENDENTDOB,SECONDDEPENDENTFIRSTNAME:SECONDDEPENDENTFIRSTNAME,SECONDEPENDENTLASTNAME:SECONDEPENDENTLASTNAME,SECONDDEPENDENTDOB:SECONDDEPENDENTDOB,SPOUSEQUALIFICATION:SPOUSEQUALIFICATION,ShirtSize:ShirtSize,WaistSize:WaistSize,FreqBhtApp:FreqBhtApp,BestDesDressingAtWork:BestDesDressingAtWork,CasualBrand:CasualBrand,Occupation:Occupation,Profession_Category:Profession_Category,ContactPreference:ContactPreference,MusicType:MusicType,NextGadget:NextGadget},succeededCallback,failedCallback,userContext); },
+validateDOB:function(DOB,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'validateDOB',false,{DOB:DOB},succeededCallback,failedCallback,userContext); },
+BalanceEnquiry:function(cardnumber,employeeID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'BalanceEnquiry',false,{cardnumber:cardnumber,employeeID:employeeID},succeededCallback,failedCallback,userContext); },
+ActivateOnly:function(amount,firstName,lastName,phone,email,dob,gender,cityID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ActivateOnly',false,{amount:amount,firstName:firstName,lastName:lastName,phone:phone,email:email,dob:dob,gender:gender,cityID:cityID},succeededCallback,failedCallback,userContext); }}
+ProcessingService.registerClass('ProcessingService',Sys.Net.WebServiceProxy);
+ProcessingService._staticInstance = new ProcessingService();
+ProcessingService.set_path = function(value) { ProcessingService._staticInstance.set_path(value); }
+ProcessingService.get_path = function() { return ProcessingService._staticInstance.get_path(); }
+ProcessingService.set_timeout = function(value) { ProcessingService._staticInstance.set_timeout(value); }
+ProcessingService.get_timeout = function() { return ProcessingService._staticInstance.get_timeout(); }
+ProcessingService.set_defaultUserContext = function(value) { ProcessingService._staticInstance.set_defaultUserContext(value); }
+ProcessingService.get_defaultUserContext = function() { return ProcessingService._staticInstance.get_defaultUserContext(); }
+ProcessingService.set_defaultSucceededCallback = function(value) { ProcessingService._staticInstance.set_defaultSucceededCallback(value); }
+ProcessingService.get_defaultSucceededCallback = function() { return ProcessingService._staticInstance.get_defaultSucceededCallback(); }
+ProcessingService.set_defaultFailedCallback = function(value) { ProcessingService._staticInstance.set_defaultFailedCallback(value); }
+ProcessingService.get_defaultFailedCallback = function() { return ProcessingService._staticInstance.get_defaultFailedCallback(); }
+ProcessingService.set_enableJsonp = function(value) { ProcessingService._staticInstance.set_enableJsonp(value); }
+ProcessingService.get_enableJsonp = function() { return ProcessingService._staticInstance.get_enableJsonp(); }
+ProcessingService.set_jsonpCallbackParameter = function(value) { ProcessingService._staticInstance.set_jsonpCallbackParameter(value); }
+ProcessingService.get_jsonpCallbackParameter = function() { return ProcessingService._staticInstance.get_jsonpCallbackParameter(); }
+ProcessingService.set_path("/qwikcilver/egms.selfserviceapp/ProcessingService.asmx");
+ProcessingService.HelloWorld= function(onSuccess,onFailed,userContext) {ProcessingService._staticInstance.HelloWorld(onSuccess,onFailed,userContext); }
+ProcessingService.ResetSelfServicePin= function(SelfServicePin,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.ResetSelfServicePin(SelfServicePin,onSuccess,onFailed,userContext); }
+ProcessingService.ResetCardPin= function(curPin,newPin,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.ResetCardPin(curPin,newPin,onSuccess,onFailed,userContext); }
+ProcessingService.UpdateCustomerDetails= function(salutation,firstName,lastName,DOB,gender,anniversary,Address1,Address2,Address3,Mobile,Mobile1,Mobile2,Mobile3,Phone,Phone1,Phone2,Phone3,Email,Email1,Email2,EmpId,Area,Pincode,CityId,StateId,CountryId,CorporateId,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.UpdateCustomerDetails(salutation,firstName,lastName,DOB,gender,anniversary,Address1,Address2,Address3,Mobile,Mobile1,Mobile2,Mobile3,Phone,Phone1,Phone2,Phone3,Email,Email1,Email2,EmpId,Area,Pincode,CityId,StateId,CountryId,CorporateId,onSuccess,onFailed,userContext); }
+ProcessingService.UpdateExtendedCustomerDetails= function(Qualification,Profession,Designation,ORGANIZATION,SALARY,MARITALSTATUS,FOODPREFERENCE,HOBBIES,ANNIVERSARY,OCCASION_FINAL,SPOUSESALUTATION,SPOUSEFIRSTNAME,SPOUSELASTNAME,SPOUSEDOB,SPOUSEPROFESSION,SPOUSESALARY,SPOUSEFOODPREFERENCE,FIRSTDEPENDENTFIRSTNAME,FIRSTDEPENDENTLASTNAME,FIRSTDEPENDENTDOB,SECONDDEPENDENTFIRSTNAME,SECONDEPENDENTLASTNAME,SECONDDEPENDENTDOB,SPOUSEQUALIFICATION,ShirtSize,WaistSize,FreqBhtApp,BestDesDressingAtWork,CasualBrand,Occupation,Profession_Category,ContactPreference,MusicType,NextGadget,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.UpdateExtendedCustomerDetails(Qualification,Profession,Designation,ORGANIZATION,SALARY,MARITALSTATUS,FOODPREFERENCE,HOBBIES,ANNIVERSARY,OCCASION_FINAL,SPOUSESALUTATION,SPOUSEFIRSTNAME,SPOUSELASTNAME,SPOUSEDOB,SPOUSEPROFESSION,SPOUSESALARY,SPOUSEFOODPREFERENCE,FIRSTDEPENDENTFIRSTNAME,FIRSTDEPENDENTLASTNAME,FIRSTDEPENDENTDOB,SECONDDEPENDENTFIRSTNAME,SECONDEPENDENTLASTNAME,SECONDDEPENDENTDOB,SPOUSEQUALIFICATION,ShirtSize,WaistSize,FreqBhtApp,BestDesDressingAtWork,CasualBrand,Occupation,Profession_Category,ContactPreference,MusicType,NextGadget,onSuccess,onFailed,userContext); }
+ProcessingService.validateDOB= function(DOB,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.validateDOB(DOB,onSuccess,onFailed,userContext); }
+ProcessingService.BalanceEnquiry= function(cardnumber,employeeID,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.BalanceEnquiry(cardnumber,employeeID,onSuccess,onFailed,userContext); }
+ProcessingService.ActivateOnly= function(amount,firstName,lastName,phone,email,dob,gender,cityID,onSuccess,onFailed,userContext) {ProcessingService._staticInstance.ActivateOnly(amount,firstName,lastName,phone,email,dob,gender,cityID,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+Type.registerNamespace('eGMS.Utility');
+if (typeof(eGMS.Utility.Response) === 'undefined') {
+eGMS.Utility.Response=gtc("eGMS.Utility.Response");
+eGMS.Utility.Response.registerClass('eGMS.Utility.Response');
+}
+Type.registerNamespace('eGMS.Transaction.Data');
+if (typeof(eGMS.Transaction.Data.TransactionResponse) === 'undefined') {
+eGMS.Transaction.Data.TransactionResponse=gtc("eGMS.Transaction.Data.TransactionResponse");
+eGMS.Transaction.Data.TransactionResponse.registerClass('eGMS.Transaction.Data.TransactionResponse');
+}

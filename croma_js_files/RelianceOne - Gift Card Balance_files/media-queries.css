@@ -1,0 +1,1260 @@
+@media screen and (min-width : 1000px) and (max-width : 1100px) {
+	.formats_offer_wrapper table td {
+    display: block;
+    width: 100%;
+	border-bottom:1px solid #dedede;
+}
+.offers_wrapper .left_offer .ofer_info {
+	width:78%;
+}
+.offers_wrapper .right_offer .ofer_info {
+	width:78%;
+}
+
+.exclusive_offer_wrapper .left_offer .ofer_info {
+    width: 63%;
+}
+.exclusive_offer_wrapper .right_offer .ofer_info {
+    width: 63%;
+}
+
+.refine_wrapper ul li {
+   
+    padding: 4px 19px;
+}
+
+.contentarea {
+	width:99%;
+}	
+.logo {
+	margin-left:10px;
+}
+.memberwrap h1 {
+	margin-left:10px;
+}
+.memberwrap h2 {
+	margin-left:10px;
+	font-size:25px;
+}
+.memberwrap {
+	background: url(../images/relianceone_img.png) right 40px bottom no-repeat;
+}
+.bannerwrap p {
+	font-size:15px;
+}
+.store select {
+	width:58%;
+}
+.footermaincon div.newsletter input[type="text"] {
+	max-width:116px;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width:100%;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:89%;
+}
+.insideyellowbgwrap {
+	padding-left:10px;
+}
+#fancybox-tmp {
+	width:50%;
+	padding:0;
+	margin:0;
+}
+.yourprioritywrap {
+	height:100%;
+}
+.yourprioritywrap div.priority {
+    padding: 75px 20px 70px 20px;
+}
+.yourprioritywrap h1 {
+	font-size:29px;
+}
+.yourprioritywrap h2 {
+	font-size:18px;
+}
+.trackreq2wrap input[type="text"] {
+	width:66%;
+}
+.trackreqwrap {
+	height:auto;
+}
+.trackreqwrap div.track {
+    padding: 65px 20px 54px;
+}
+.trackreqwrap h1 {
+    font-size: 28px;
+}
+.trackreqwrap h2 {
+    font-size: 28px;
+}
+.transactionleft {
+	margin-right:28px;
+}
+	/*ul.partner-list li i.bnw{
+		display: none !important;
+	}*/
+	ul.partner-list li i.colored{
+		display: block !important;
+	}
+	
+	div.completeprowrap.latest > div{
+	width: 89%;
+}
+
+
+.ViewMyBalanceWrap li.headings {
+	width:31%;
+}
+.ViewMyBalanceWrap li.balance {
+	width:16%; padding:0 10px 0 10px; color:#000000; font-size:20px; 
+}
+.ViewMyBalanceWrap li.buttons {
+	width:33.3%;
+}
+.ViewMyBalanceWrap li.balance .ppoints {
+	padding-left:22px;
+}
+.ViewMyBalanceWrap .phead {
+	width:88%;	
+}
+
+}
+@media screen and (max-width : 768px) {
+	/* point earns structure */
+.pointearn-wrap .disply-table, .pointearn-wrap .disply-cell {
+	display:block;
+	width:100%;	
+}
+.pointearn-wrap .disply-table { 
+	border-top:5px solid #d00e16;
+	margin-top:2em;
+}
+.pointearn-wrap .logos-wrap li, .pointearn-wrap .category-name {
+	text-align:center;
+	width:100%;
+}
+.headtitle-wrap {
+	display:none !important;
+}
+#dialog10 {
+	width:90% !important;
+}
+/* / point earns structure */
+	#boxes #dialog,#dialog1,#dialog2,#dialog3,#dialog4,#dialog5,#dialog6,#dialog7,#dialog8,#dialog9 {
+		max-width:500px;
+	}
+	#boxes .dailog_arrow {
+		background:#f5f5f5; background-image:none;
+	}
+	
+	.formats_offer_wrapper table td {
+		display:block;
+		 width:100%;
+	}
+	
+	
+	.refine_wrapper .left {
+		float:none;
+		width:100%;
+		background-image:none;
+	}
+	.refine_wrapper .right {
+		float:none; width:100%;
+	}
+	.refine_wrapper ul li {
+		width:100%; border:none;
+	}
+	
+	
+	ul.tabs {
+		display:block;
+	}
+	ul.tabs li {
+		display:block; float:none; width:100%; background-image:none; margin-bottom:2px;
+	}
+	ul.tabs li.active{
+			background-image:none;
+	}
+	
+	
+	
+	ul.partner-list li{ 
+		width:100%;
+	}
+	ul.partner-list li i { 
+		top: 16%; 
+		padding-top: 9.75%; 
+		
+	}
+	
+	li.vimal i.bnw{
+		top: 16%;
+		padding-top: 10%;
+
+	} 
+	li.vimal i.colored{
+		top: 16%;
+		padding-top: 10%;
+		display: none; 
+		background-image:url(../images/partner/vimal_h.png); 
+	}
+	
+	li.vision_express i.bnw{
+		width: 30%;
+		left: 35%;
+		
+	} 
+	li.payless i.bnw{
+		width: 30%;
+		left: 35%;
+		padding-top: 10%;
+	
+		
+	} 
+	
+li.fresh_direct i.bnw{ 
+	padding-top: 0;
+	width: 30%;
+		left: 35%;
+} 
+	
+	li.vision_express i.colored{
+		display: none;
+		width: 30%;
+		left: 35%;
+		
+	}
+	li.Rmart i.bnw{ 
+		top: 16%;
+		padding-top: 10%;
+	
+	} 
+	li.Rmart i.colored{ 
+		top: 11%;
+		padding-top: 9.5%;
+		display: none; 
+		background-image:url(../images/partner/rmart_h.png); 
+	} 
+	
+
+
+
+}
+@media screen and (min-width : 768px) and (max-width : 1000px) {
+		li.fresh_direct i.bnw{ 
+			padding-top:17%;
+		}
+	#boxes #dialog,#dialog1,#dialog2,#dialog3,#dialog4,#dialog5,#dialog6,#dialog7,#dialog8,#dialog9 {
+		max-width:650px;
+	}
+	
+	
+	.exclusive_offer_wrapper .left_offer .ofer_info {
+		width:70%;
+	}
+	.exclusive_offer_wrapper .right_offer .ofer_info {
+		width:70%;
+	}
+	
+	
+	.formats_offer_wrapper table td {
+		display:block;
+		 width:100%;
+		 
+	}
+	.offers_wrapper {
+		border-top:1px solid #dedede;
+	}
+	
+.press_release_search ul li {
+	display:block; width:100%; margin-bottom:10px;
+}
+	
+	
+	
+	.refine_wrapper .left { 
+	padding:0;
+	}
+	.refine_wrapper ul li {
+		font-size:17px; padding:4px 5px;
+		
+	}
+	
+.giftcard_left {
+	width:29%;
+}
+.giftcard_right {
+	width:69%;
+}
+.logos_formats_wrapper div {
+	width:227px !important; border-bottom: 1px solid #e0e0e0 !important;
+}
+
+
+		.captcha_image {
+	margin-top:15px; padding-left:0px;
+}
+	
+.insideyellowbgwrap {
+	height:60px;
+}
+.profilebluebannerwrap p {
+	font-size:15px;
+}
+.profileform1wrapleft {
+	width:100%;
+}
+.profileform1wrapright {
+	width:100%;
+}
+.profileform2wrap li {
+	width:100%;
+}
+.profileform2wrap {
+	height:auto;
+}
+.whitebgform {
+	height:auto;
+}
+.whitebgform input[type="button"], .whitebgform input[type="submit"] {
+	margin-right:25px;
+}
+.offersformwrap div.content li {
+	width:19%;
+}
+.navarea {
+	background: #D00E16;
+}
+.memberwrap h1 {
+	font-size:36px;
+}
+.memberwrap h2 {
+	font-size:18px;
+}
+.maincontentarea {
+	height:auto;
+}
+.memberloginwrap {
+	padding: 44px 22px 26px 22px;
+}
+.newregiterimg {
+	height:165px !important;
+}
+.newmembercon {
+	padding-top:10px;	
+	height:165px !important;
+}
+.newmembercon h1 {
+	font-size:22px;
+}
+.newmembercon p {
+	font-size:14px;
+}
+.newmemberimg {
+	height:168px !important;	
+}
+.memberlogincon h1 {
+	font-size:21px;
+}
+.memberlogincon p {
+	font-size:13px;
+}
+.memberlogincon span.user {
+	width:30%;
+}
+.forgot {
+	float:left;
+}
+.newregistercon {
+	height:168px !important;
+	padding-top:15px;
+}
+.newregistercon h1 {
+	font-size:22px;
+}
+.newregistercon p {
+	font-size:14px;
+}
+.bannerwrap {
+	width:100%;
+	margin-bottom:8px;
+}
+.maincontentarea {
+	margin-bottom:8px;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width:100%;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:89%;
+}
+.span_1_of_3 {
+	width:100%;
+	margin:0 0 8% 0;
+	padding:0 2% 0 2%;
+}
+.contactcons span {
+	margin:0px 15px 0px 0px;
+}
+.contactcons div.icontxt {
+	margin:0px 0px 5px 0;	
+
+}
+#fancybox-tmp {
+	width:60% !important;
+}
+.yourprioritywrap h1 {
+	font-size:20px;
+	line-height:25px;
+}
+.yourprioritywrap h2 {
+	font-size:12px;
+}
+.yourprioritywrap {
+	height:auto;
+	margin-bottom:0;
+}
+.yourprioritywrap div.priority {
+	padding-bottom:38px;
+}
+.buttonwrap {
+	margin-bottom:0;
+}
+.registerformwrap li {
+	width:100%;
+}
+.registerformwrap label {
+	width:auto;
+}
+.registerformwrap input[type="text"] {
+	width:100%; 
+}
+.captcha_image {
+	margin-top:15px;
+}
+.queswrap li {
+	width:100%;
+}
+.queswrap select {
+    width: 100%;
+}
+.queswrap input[type="text"] {
+    width: 100%;
+}
+.trackreqwrap {
+    width: 100%;
+	height:auto;
+}
+.trackreqwrap img {
+    width: 100%;
+}
+.trackreqwrap div.track {
+    width: 100%;
+	padding-top:28px;
+    float: left;
+}
+.trackreq2wrap input[type="text"] {
+	width:55%;
+}
+.trackform2 li {
+    width: 100%;
+}
+.trackform2 input[type="text"] {
+    width: 100%;
+}
+.trackform2 textarea[type="text"] {
+    width: 100%;
+}
+.transactionleft {
+    width: 100%;
+}
+.transactionright {
+    width: 100%;
+}
+	ul.partner-list li{ 
+		width:50%;
+	}
+	ul.partner-list li i{ 
+		top: 22%;
+		left: 12.5%; 
+		width: 75%;
+		padding-top: 15.75%; 
+	}
+	
+	li.vimal i.bnw{
+		top: 15%;
+		padding-top: 21%;
+		
+	} 
+	li.vimal i.colored{
+		top: 15%;
+		padding-top: 21%;
+		display: none; 
+		background-image:url(../images/partner/vimal_h.png); 
+	}
+	
+	li.vision_express i.bnw{
+		width: 53%;
+		left: 24.5%;
+		
+	} 
+	li.payless i.bnw {
+		padding-top:15%;
+	}
+	li.vision_express i.colored{
+		display: none;
+		width: 53%;
+		left: 24.5%;
+		background-image:url(../images/partner/vision_express_h.png); 
+	}
+	
+	li.Rmart i.bnw{ 
+		top: 4%;
+		left: 20%;
+		width: 53.25%;
+		
+	} 
+	li.Rmart i.colored{ 
+		top: 4%;
+		left: 20%;
+		width: 53%;
+		display: none; 
+		background-image:url(../images/partner/rmart_h.png); 
+	}
+#canvas, #canvas2 {
+		width:200px !important;
+		background:#ffffff;
+		float:left;	
+}	
+
+div.completeprowrap.latest > div{
+	width: 88%;
+}
+
+.card_no_wrap {
+	width:100%;
+}
+.registerformwrap input.card_no[type="text"] {
+	width:9%;
+}
+.phone_wrap {
+	width:100%; 
+}
+}
+
+
+
+@media screen and (min-width : 320px) and (max-width : 900px) {
+
+	
+.giftcardbal_formwrap li {
+	width:100%;
+	float:none;
+	margin:0;
+	height:90px;
+	}
+
+.navarea {
+	margin-top:0px;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.corporate_enquiries {
+	width:100%;
+}
+.other_enquiries {
+	width:100%; border:0 none; margin-top:50px;
+}
+.other_enquiries .data {
+	border:0 none;
+}
+
+}
+@media screen and (min-width : 320px) and (max-width : 767px) {
+li.digital_xpress i.bnw, li.reliance_digital i.bnw, li.istore_digital i.bnw { 
+	padding-top:13%;
+	top:0;
+}
+li.fresh_direct i.bnw{ 
+	padding-top: 7.5%;
+	left: 35%;
+} 
+li.vision_express i.bnw {
+	width:100%;
+	left:0;
+	right:0;
+}
+	.div_1_of_2 {
+		width:100% !important;
+	}
+	.text_div {
+		font-size:17px;
+	}
+	
+	.enjoy_exclusive .text_div {
+		left:0;
+	}
+	.get_special .text_div { 
+		 right:0; left:auto;
+	}
+	.use_relianceone .text_div {
+		right:auto; left:0;
+	}
+	.your_points img, .your_points img {
+		float:right;
+	}
+	
+	.div_1_of_3 {
+		width:33.1%;
+	}
+	
+	
+	
+	
+	.formats_offer_wrapper table td {
+		display:block;
+		 width:100%;
+		 
+	}
+	.offers_wrapper {
+		border-top:1px solid #dedede;
+	}
+	
+.giftcardbal_formwrap {
+    padding: 20px 0 10px 0px;
+}
+.press_release_search {
+	margin:0;
+}
+.press_release_search ul li { 
+	width:100%; display:block; margin-bottom:10px;
+}
+.giftcard_left {
+	float:none; margin-bottom:10px; width:100%;
+}
+.giftcard_right {
+	float:none; width:100%;
+}
+	
+	
+	.card_no_wrap {
+	width:100%;
+}
+.registerformwrap input.card_no[type="text"] {
+	width:15%;
+}
+.phone_wrap {
+	width:100%; background:red;
+}
+/*	.chartarea1 {
+		width:200px !important;
+		border:1px solid #000;
+	}	*/
+div.completeprowrap.latest > div{
+	width: 80%;
+}
+
+#canvas, #canvas2 {
+		width:200px !important;
+		background:#ffffff;
+		float:left;	
+}	
+
+.insideyellowbgwrap {
+	height:60px;
+}
+.profilebluebannerwrap p {
+	font-size:17px;
+	width:auto;
+}
+.profilebluebannerwrap span {
+	display:none;
+}
+.profileform1wrapleft {
+	width:100%;
+}
+ul.father li {
+	width:100%;
+}
+
+.profileform1wrapright {
+	width:100%;
+}
+.profileform2wrap li {
+	width:100%;
+	overflow:hidden;
+}
+.profileform2wrap {
+	height:auto;
+}
+.whitebgform {
+	height:auto;
+}
+.whitebgform input[type="button"], .whitebgform input[type="submit"] {
+	margin-right:25px;
+}
+.offersformwrap div.content li {
+	width:19%;
+}
+.offersformwrap div.leftimg {
+	display:none;
+}
+.offersformwrap div.content ul {
+	margin-left:45px;
+}
+.offersformwrap div.content li {
+	width:26%;
+	margin:0 0 0 20px;
+}
+.offersformwrap div.content {
+	padding:0;
+}
+.memberwrap {
+	display:none;
+}
+.logo {
+	padding-left:10px;
+}
+.maincontentarea {
+	margin-top:15px;
+	margin-bottom:8px;
+	height:auto;
+}
+.memberloginwrap {
+	width:100%;
+}
+.memberlogincon {
+	margin-bottom:35px;
+}
+.memberloginwrap {
+	padding-top:20px;
+	padding-bottom:30px;
+}
+.memberlogincon h1{
+	margin-top:15px;
+}
+.memberloginformcon div.login input[type="text"] {
+	max-width:none;
+}
+.newregiterwrap {
+	width:100%;
+}
+.newregiterwrap img{
+	width:100%;
+}
+.newregistercon {
+	height:100% !important;
+	padding-bottom:22px;
+}
+.newmemberwrap {
+	width:100%;	
+}
+.newmemberwrap img{
+	width:100%;	
+}
+.newmembercon {
+	height:100% !important;
+	padding-bottom:22px;
+}
+.bannerwrap {
+	width:100%;
+	margin-bottom:8px;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width:100%;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:78%;
+}
+.span_1_of_3 {
+	width:100%;
+	margin:0 0 8% 0;
+	padding:0 2% 0 2%;	
+}
+.contactcons div.icontxt {
+	margin:0px 0px 0px 0;
+	border:none;
+	line-height:34px;
+}
+.insideyellowbgwrap {
+	padding-left:10px;
+}
+.mybalancewrap {
+	height:auto;
+}
+.mybalancepointwrap {
+	width:100%;
+}
+.mybalanceprepaidwrap {
+	width:100%;
+}
+.mybalanceotherwrap {
+	width:100%;
+}
+#fancybox-tmp {
+	width:80% !important;
+}
+.yourprioritywrap img {
+	width:100%;
+	float:left;
+}
+.yourprioritywrap h1 {
+	font-size:32px;
+}
+.yourprioritywrap {
+	margin-bottom:0px;
+	height:auto;
+}
+.yourprioritywrap div.priority {
+	width:100%;
+	padding:22px 20px 21px;
+	float:left;
+}
+.buttonwrap {
+	margin-bottom:0px;
+}
+.registerformwrap li {
+	width:100%;
+}
+.registerformwrap label {
+	width:auto;
+}
+.registerformwrap input[type="text"] {
+	width:100%;
+}
+.captcha_image {
+	margin-top:15px; padding-left:0px;
+}
+.queswrap li {
+	width:100%;
+}
+.queswrap select {
+    width: 100%;
+}
+.queswrap input[type="text"] {
+    width: 100%;
+}
+.trackreqwrap {
+    width: 100%;
+	height:auto;
+}
+.trackreqwrap img {
+    width: 100%;
+}
+.trackreqwrap div.track {
+    width: 100%;
+	padding-top:28px;
+    float: left;
+}
+.trackreq2wrap input[type="text"] {
+	width:45%;
+}
+.trackform2 li {
+    width: 100%;
+}
+.trackform2 input[type="text"] {
+    width: 100%;
+}
+.trackform2 textarea[type="text"] {
+    width: 100%;
+}
+.transactionleft {
+    width: 100%;
+}
+.transactionright {
+    width: 100%;
+}
+.transactiondatewrap li {
+    width: 40%;
+}
+.transactiondatewrap input[type="button"], .transactiondatewrap input[type="submit"] {
+	margin:0;
+}
+
+ul.userlinks {
+	margin-top:10px;
+	font-size:14px;
+	float:left !important;
+}
+.insideyellowbgwrap {
+    height: 110px;
+}
+div.completeprowrap.latest > div{
+	width: 87%;
+}
+div.completeprowrap.latest > div{
+	width: 70%;
+}
+
+
+.ViewMyBalanceWrap .phead {
+	width:100%;
+}
+.ViewMyBalanceWrap li.headings {
+	width:100%; display:block; padding:15px;
+}
+.ViewMyBalanceWrap  .phead {
+	text-align:center;
+}
+.ViewMyBalanceWrap li.balance {
+	width:100%; text-align:center; display:block; padding:15px;
+}
+
+.ViewMyBalanceWrap li.buttons {
+	width:100%; text-align:center; display:block; padding:15px;
+}
+.ViewMyBalanceWrap li.balance .pruppes {
+	float:none;
+}
+ul.child_name li{ 
+width:100%;
+}
+ul li input.dob[type="text"] {
+	width:80% !important;
+}
+
+
+
+}
+@media screen and (min-width : 320px) and (max-width : 500px) {
+	li.payless i.bnw {
+	left:0;
+	right:0;
+	width:100%;
+	padding-top: 0%;
+}
+li.vimal i.bnw {
+	height:92px;
+	top:10%;
+	padding-top:0;
+}
+li.vision_express i.bnw {
+	width:100%;
+	left:0;
+	right:0;
+}
+	.logos_formats_wrapper div {
+		width:100%;
+	}
+	.div_1_of_3 {
+		width:100%;
+	}
+	
+	
+	.rilservice_receive_festive .left, .rilservice_receive_festive .right {
+		width:100%; float:none; display:block;
+	}
+	
+	.rilservice_know_your .right, .rilservice_know_your .left {
+		width:100%; float:none; display:block;
+	}
+	
+	.rilservice_Know_your_point .left, .rilservice_Know_your_point .right {
+		width:100%; float:none; display:block;
+	}
+	
+
+	 
+	
+	.rilservice_know_your .arrow, .rilservice_Know_your_point .arrow, .rilservice_receive_festive .arrow {
+		display:none;
+	}
+	 
+	
+	#boxes .window {
+		   overflow:auto;
+   	height: 300px;
+	}
+	
+	#boxes #dialog,#dialog1,#dialog2,#dialog3,#dialog4,#dialog5,#dialog6,#dialog7,#dialog8,#dialog9 {
+		max-width:300px; overflow:auto;
+	}
+	#boxes .dailog_arrow {
+		background:#f5f5f5; background-image:none;
+	}
+	#boxes .offer_right div {
+		margin:0;
+	}
+	#boxes .offer_left {
+	display:block; width:100%;
+}
+#boxes .offer_right {
+	display:block; width:100%;
+}
+#boxes .dailog_arrow {
+	display:none;
+}
+#boxes .close {
+	top:10px; right:10px;
+}
+	
+	
+.exclusive_offer_wrapper .left_offer .ofer_info {
+    width: 100%;
+}
+.exclusive_offer_wrapper .right_offer .ofer_info {
+    width: 100%;
+}
+	
+	
+	.formats_offer_wrapper table td {
+		display:block;
+		 width:100%;
+		 
+	}
+	
+	.offers_wrapper {
+		border-top:1px solid #dedede;
+	}
+	
+.buttonwrap div.orangebutton input[type="button"], .buttonwrap div.orangebutton input[type="submit"] {
+	font-size:12px;
+	margin:25px 10px 20px 0px;
+}
+.profileform1wrap input[type="text"] {
+	width:100%;
+}
+.profilebluebannerwrap {
+	height:90px;
+}
+.profileform2wrap input[type="text"] {
+	width:100%;
+}
+.profileform2wrap label {
+	width:100%;
+}
+.profileform1wrapleft {
+	width:100%;
+}
+.profileform1wrapright {
+	width:100%;
+}
+.profileform2wrap li {
+	width:100%;
+}
+.profileform2wrap {
+	height:auto;
+}
+.whitebgform {
+	height:auto;
+}	
+.offersformwrap div.content label {
+	font-size:16px;
+}
+.offersformwrap div.content h1 {
+	margin-bottom:8px;
+	font-size:26px
+}
+.offersformwrap div.content li {
+	width:40%;
+	margin-left:25px;
+}
+.offersformwrap div.content ul {
+	margin:0;
+}
+.offersformwrap div.content input[type="checkbox"] {
+	margin-right:0;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:92%;
+}
+.offersformwrap {
+	height:260px;
+	background-size:100% 100%;
+}
+.forgot {
+	font-size:13px;
+}
+.footerwrap {
+	text-align:center;
+	font-size:13px;
+}
+.footerwrap div.ftlinks {
+	font-size:13px;
+	float:none !important;
+	text-align:center !important;
+}
+.insideyellowbgwrap div.welcometxt {
+	font-size:16px;
+}
+.insideyellowbgwrap {
+/*	height:85px;*/
+	height:110px;
+}
+ul.userlinks {
+	margin-top:10px;
+	font-size:14px;
+	float:left !important;
+}
+#fancybox-tmp {
+	width:100% !important;
+}
+.trackreq2wrap input[type="text"] {
+    width: 40%;
+}
+.trackreq2wrap input[type="button"], .trackreq2wrap input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.transactiondatewrap li {
+    width: 50%;
+}
+.transactiondatewrap li:last-child {
+    width: 30%;
+    margin: 0 auto;
+    float: none;
+}
+div.completeprowrap.latest > div{
+	width: 73%;
+}
+ul.partner-list li i { 
+		top: 16%; 
+		padding-top: 9.75%; 
+		height:80px;
+}
+ul.partner-list li {
+	height:107px;
+}
+	
+
+}
+@media screen and (min-width : 300px) and (max-width : 470px) {
+li.fresh_direct i.bnw{ 
+	padding-top: 0%;
+	width:100%;
+	display:block;
+	text-align:center;
+	left:0;
+	right:0;
+} 
+li.payless i.bnw {
+	left:0;
+	right:0;
+	width:100%;
+	padding-top: 0%;
+}
+	.text_div span {
+		 bottom:0!important; top:10px!important; left:10px!important;
+	}
+	.earn_redeem .text_div {
+		font-size:17px;
+	}
+	.enjoy_exclusive .text_div {
+		font-size:17px; left:0;
+	}
+	.get_special .text_div { 
+		font-size:17px; right:0; left:auto;
+	}
+	.use_relianceone .text_div {
+		font-size:17px; right:auto; left:0;
+	}
+	
+	
+	.offers_wrapper .left_offer .ofer_info {
+		width:100%;
+	}
+	.offers_wrapper .right_offer .ofer_info {
+		width:100%;
+	}
+	.offers_wrapper .left_offer .offer_photo {
+		text-align:center; width:100%;
+	}
+	.offers_wrapper .right_offer .offer_photo {
+		text-align:center; width:100%;
+	}
+	
+	.exclusive_offer_wrapper .left_offer .ofer_info {
+	width:100%;
+}
+	
+	
+.profileform1wrap label {
+	width:auto;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:70%;
+}	
+.otpwrap li {
+    width: 100%;
+}
+.trackreq2wrap input[type="text"] {
+    width: 100%;
+    margin: 0;
+}
+.trackreq2wrap input[type="button"], .trackreq2wrap input[type="submit"] {
+    font-size: 17px;
+    float: left;
+    margin-top: 10px;
+}
+.transactiondatewrap li {
+	width:100%;
+}
+.transbuttonswrap input[type="button"], .transbuttonswrap input[type="submit"] {
+    padding: 0px 10px 0px 32px;
+		float:left;
+}
+.transbuttonswrap div.tprint {
+	float:left;
+	margin-top:20px;
+}
+.note_pwd {
+	width:100% !important;
+	
+}
+.note_pwd_outer {
+	padding-left:0px;
+}
+.note_pwd_outer .note_pwd {
+	width:100%; 
+}
+
+}
+
+@media screen and (max-width : 1024px) {
+	/*ul.partner-list li i.bnw{
+		display: none !important;
+	}*/
+	ul.partner-list li i.colored{
+		display: block !important;
+	}
+	
+
+
+
+}
+
+
+@media screen and (min-width : 320px) and (max-width : 321px) { 
+div.completeprowrap.latest > div{
+	width: 70%;
+}
+}
+
+/*@media screen and (min-width : 320px) and (max-width : 618px) { 
+
+div.completeprowrap.latest > div{
+	width: 70%;
+}
+
+
+.ViewMyBalanceWrap .phead {
+	width:100%;
+}
+.ViewMyBalanceWrap li.headings {
+	width:100%; display:block; padding:15px;
+}
+.ViewMyBalanceWrap li.balance {
+	width:100%; text-align:center; display:block; padding:15px;
+}
+
+.ViewMyBalanceWrap li.buttons {
+	width:100%; text-align:center; display:block; padding:15px;
+}
+.ViewMyBalanceWrap li.balance .pruppes {
+	float:none;
+}
+}*/

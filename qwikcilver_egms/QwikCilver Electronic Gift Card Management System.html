@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="IE=Edge">
+        <script type="text/javascript" src="./QwikCilver Electronic Gift Card Management System_files/jquery.min.js.download"></script>
+        <script src="./QwikCilver Electronic Gift Card Management System_files/aes.js.download" type="text/javascript"></script>
+        <script src="./QwikCilver Electronic Gift Card Management System_files/pbkdf2.js.download" type="text/javascript"></script>
+        <!-- SignalR and Notification Scripts -->
+    <script type="text/javascript" src="./QwikCilver Electronic Gift Card Management System_files/signalr.min.js.download"></script>
+    <script type="text/javascript" src="./QwikCilver Electronic Gift Card Management System_files/SignalRNotification.js.download"></script>
+
+ <script language="javascript" type="text/javascript">        
+    var Path = window.location.pathname;
+    var Page = Path.substring(Path.lastIndexOf('/') + 1);
+    if(Page =="LogOut.aspx")
+    {          
+	    window.location = "Login.aspx";
+        window.history.forward();    
+    }
+	</script>
+    <title>
+	QwikCilver Electronic Gift Card Management System
+</title>
+      <script type="text/javascript" language="javascript">
+     
+    function placeFocus() {
+if (document.forms.length > 0) {
+var field = document.forms[0];
+for (i = 0; i < field.length; i++) {
+if ((field.elements[i].type == "text") ) {
+document.forms[0].elements[i].focus();
+break;
+         }
+      }
+   }
+}
+    var CtlPressed;
+
+//Below method updated to support key events from firefox and chrome.
+function ValidateKeyDown(e)
+{
+    var evt = e ? e : window.event;
+    if ((window.document.activeElement.type == "text" || window.document.activeElement.type == "password") && evt.keyCode == 8)
+    {
+        return true;
+    }
+    if (evt.keyCode == 116)
+    {
+        evt.keyCode = 8;
+    }
+    if (evt && (evt.keyCode == 8))
+    {
+        // try to cancel the backspace
+        evt.cancelBubble = true;
+        evt.returnValue = false;
+        return false;
+    }
+    if (CtlPressed == true && evt.keyCode == 78)
+    {
+        return false;
+    }
+    if (evt.keyCode == 17)
+    {
+        CtlPressed=true;
+    }
+    
+}
+
+//Below method updated to support key events from firefox and chrome.
+function ValidateKeyUp(e)
+{
+    var evt = e ? e : window.event;
+    if (evt.keyCode == 17)
+    {
+        CtlPressed=false;
+    }
+}
+
+function clickButton(e, buttonid)
+{
+      var evt = e ? e : window.event;
+      var bt = document.getElementById(buttonid);
+      if (bt)
+      
+      {
+          if (evt.keyCode == 13)
+          {
+                bt.click(); 
+                return false; 
+          } 
+      } 
+}
+
+
+</script>
+
+      <link href="./QwikCilver Electronic Gift Card Management System_files/Style.css" type="text/css" rel="stylesheet"></head>
+<body id="ctl00_Body1" class="pBack" oncontextmenu="return false;" onkeyup="javascript:return ValidateKeyUp(event);" onkeydown="javascript:return ValidateKeyDown(event);">
+   <form method="post" action="https://qc3.qwikcilver.com/QwikCilver/eGMS/WebUI/Login.aspx" onsubmit="javascript:return WebForm_OnSubmit();" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_ContentPlaceHolder1_btnSubmit_lbThemeButton&#39;)" id="aspnetForm" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="OMXPM4LmRItg1tkWeyyyVXftuR9bS2tDdiTaXrz8e3T5RaRdgoEzpqrdfmzbXujeeDepyNITsmdU6QJx6rrdDDHU4ESSu4cHHBiiOE1G85Gvn8lOY2fL2JgG3sUSnfUSWNaycXJyLzxaHG0PKpQ+SkS849aeHYED/DXu8GeBvo+X70pC0WlnMIVEeCoylrND4TP+zGL79ZUDGVcOxjYJ7ZdVflGKMnV9Nk/hndXss9HxrS3IaChzF/i8XasfsJluD9rLO7uwLCrhpgNV+Kbb0bZFAOvzXy5HN9Ux/nMN/35mstLuGb1vuxdsRR9OHylBpHlOY1vi7UPexv0C3yreiekIrT02GPCHzBK1lr/gYTS0yJEJI8G1kWurVErojwb3Vjl8bq1c8txcU39lflzTtpPavN8AezqavZDceknhhNUGBCnK9OXAE9lm83cBtLyTYlJ6ZvDEg5ieuhDwLGwem/vSrlyc8Jyice9VNX+bzUOlsY8LUmC664d9iJnXoXdCIJBtjFjRsGL1QsWO+/FapSXkz38=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./QwikCilver Electronic Gift Card Management System_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./QwikCilver Electronic Gift Card Management System_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./QwikCilver Electronic Gift Card Management System_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./QwikCilver Electronic Gift Card Management System_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="./QwikCilver Electronic Gift Card Management System_files/WebResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E02CBF6">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>	
+    <table style="height:100px"><tbody><tr><td></td></tr></tbody></table>
+		<table cellspacing="0" cellpadding="0" border="0" style="width: 685px; vertical-align: middle" align="center">
+		<tbody><tr>
+		<td class="pAlign" valign="top">
+		<table cellspacing="0" cellpadding="0" border="0" class="pbTable">
+			
+			<tbody><tr>
+			<td class="pbC" style="">
+			<table cellspacing="0" cellpadding="0" border="0" class="PageSettings">
+			<tbody><tr>
+				<td class="pcT" align="left" style="background-color: #F8F9FA">
+				<table cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tbody><tr>
+				<td>              
+					
+				</td>
+				</tr>
+				</tbody></table>
+				<table cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tbody><tr>
+                 <td>
+                     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                       
+                         <tbody><tr valign="bottom">
+                             <td class="QCLogo" style="width:40%;height: 70px; vertical-align: bottom">
+                                 <img id="QwikLogo" alt="Application Logo" src="./QwikCilver Electronic Gift Card Management System_files/QwikPOSx.png"></td>
+                             <td align="right" style="width:60%; height: 70px; vertical-align:bottom; padding-bottom:5px">
+                                 
+                                 </td>
+                            
+                         </tr>
+                         <tr><td style="height:5px"></td></tr>
+                         
+                     </tbody></table>
+                 </td>
+				</tr>
+				</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td class="pcC">			
+					<table cellspacing="0" cellpadding="0" border="0" width="100%" height="280px">
+                        <tbody><tr>
+                            <td align="center" valign="middle" class="dht">
+                                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; white-space: nowrap;">
+                                    <tbody><tr>
+                                        <td align="left" style="height: 16px" class="VAlignMiddle">
+                                            &nbsp;
+                             </td>
+                                       
+                                        
+                                    </tr>
+                                </tbody></table>
+                               
+                            </td>
+                        </tr>
+                      
+					<tr>
+					<td style="background-color:#DFD9C0">
+						<table cellspacing="0" cellpadding="0" border="0" style="width:100%;">
+						<tbody><tr>
+						<td class="pContent" style="padding:8px 10px 5px 10px; height: 164px;" align="center">
+                           <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+                                <tbody><tr>
+                                    <td class="PageHeight" style="height: 232px">
+                                
+
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            
+            var usname = window.location.host.toString() + "eGMS";
+            var usnameVal = localStorage.getItem(usname);
+
+            if ((usnameVal != null) && (usnameVal != "")) {
+                localStorage.removeItem(usname);
+            }
+
+            function guid() {
+                return numgen() + numgen() + '-' + numgen() + '-' + numgen() + '-' +
+                  numgen() + '-' + numgen() + numgen() + numgen();
+            }
+
+            function numgen() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                  .toString(16)
+                  .substring(1);
+            }
+
+            var mypageid = guid();
+
+            localStorage.setItem(usname, mypageid);
+
+            var encrmypageid = EncryptData(mypageid);
+
+            if (encrmypageid != "") {
+                $("#currentPagediv").find("input[type=hidden][id$=__PID__]").val(encrmypageid);
+            }
+            else {
+                $("#currentPagediv").find("input[type=hidden][id$=__PID__]").val("");
+            }
+
+        });
+
+
+        function EncryptData(PlainText) {
+
+            try {
+                //Creating the Vector Key
+
+                var iv = CryptoJS.enc.Hex.parse('37462a456f392725376d752a2650573e');
+
+                //Encoding the Password in from UTF8 to byte array
+                var Pass = CryptoJS.enc.Utf8.parse('7d5d61656b');
+
+                //Encoding the Salt in from UTF8 to byte array
+                var Salt = CryptoJS.enc.Utf8.parse("424d3b6b79252427633878407d");
+
+                //Creating the key in PBKDF2 format to be used during the encryption
+                var itrs = CryptoJS.PBKDF2(Pass.toString(CryptoJS.enc.Utf8), Salt, { keySize: 128 / 32, iterations: 1000 });
+
+                //Encrypting the string contained in cipherParams using the PBKDF2 key
+                var encrypted = CryptoJS.AES.encrypt(PlainText, itrs, { mode: CryptoJS.mode.CBC, iv: iv, padding: CryptoJS.pad.Pkcs7 });
+
+                //encryptData.value = encrypted.ciphertext.toString(CryptoJS.enc.Base64);
+                return encrypted.ciphertext.toString(CryptoJS.enc.Base64);
+            }
+            //Malformed UTF Data due to incorrect password
+            catch (err) {
+                return "";
+            }
+        }
+      </script>
+
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%"> 
+        <tbody><tr>
+            <td valign="top" align="center">
+      <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+               
+                <table id="ctl00_ContentPlaceHolder1_tblContent" border="0" cellpadding="0" cellspacing="0" class="dv">
+	<tbody><tr style="display:none">
+		<td class="dh">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td class="dhel">
+                                        <img alt="" src="./QwikCilver Electronic Gift Card Management System_files/space.gif"></td>
+                                    <td class="dht" valign="middle">
+                                        <span id="ctl00_ContentPlaceHolder1_lblHeader">Sign In</span>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+	</tr>
+	<tr>
+		<td align="left">
+                            <table id="CollapsibleRegion" border="0" cellpadding="0" cellspacing="0" style="display: block" width="100%">
+                                <tbody><tr>
+                                    <td class="dBody" style="background-color:#DFD9C0">
+                                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+                                            <tbody><tr>
+                                                <td align="left">
+                                                    <div id="ctl00_ContentPlaceHolder1_pnlLogin" style="width:100%;">
+			
+                                                        <table style="width: 100%" border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody><tr>
+                                                                <td align="left" colspan="3"><br>
+                                                                    <span id="SignInControl_LoginMsg" style="color:#813A3A">Enter your user name and password to sign in.</span>
+                                                                    <br>
+                                                                    <div style="border-bottom: 1px solid #cccccc;"></div>
+                                                                    </td>
+                                                            </tr>
+                                                           
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <div class="field_label_login" style="color: #666; font-family: Verdana,Geneva,ms sans serif; padding-left: 5px;">
+                                                                        User Name</div>
+                                                                    <div>
+                                                                        <input name="ctl00$ContentPlaceHolder1$txtUserName" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="field_input_login" onfocus="this.style.backgroundColor = &#39;#FFFFCE&#39;" onblur="this.style.backgroundColor = &#39;#FFFFFF&#39;" autocomplete="off" style="background-color: rgb(255, 255, 255);">
+                                                                    </div>
+                                                                </td>
+                                                                <td style="width: 100px"></td>
+                                                                <td rowspan="6" style="vertical-align: middle; background-color: #DFD9C0; width: 100px;" align="left">
+                                                                    <img id="ctl00_ContentPlaceHolder1_Logo" src="./QwikCilver Electronic Gift Card Management System_files/logo.gif"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator2" style="display:none;">Please Enter User Name</span></td>
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <div class="field_label_login" style="color: #666; font-family: Verdana,Geneva,ms sans serif; padding-left: 5px;">
+                                                                        Password</div>
+                                                                    <div>
+                                                                        <input name="ctl00$ContentPlaceHolder1$txtPassword" type="password" id="ctl00_ContentPlaceHolder1_txtPassword" class="field_input_login" onkeypress="return clickButton(event,&#39;ctl00_ContentPlaceHolder1_LinkButton1&#39;)" onfocus="this.style.backgroundColor = &#39;#FFFFCE&#39;" onblur="this.style.backgroundColor = &#39;#FFFFFF&#39;" autocomplete="off" style="border-color:SaddleBrown;border-style:Solid;">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator1" style="display:none;">Please enter Password</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <span id="ctl00_ContentPlaceHolder1_lblMessage" style="color:Red;">Terminal information not provided.</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                            <td align="left">
+                                                                <div>
+                                                                    
+                                                                     
+                                                                </div>
+                                                            </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="right">
+                                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                                        <tbody><tr>
+                                                                            <td><br>
+                                                                               
+                                                                                <div>
+                                                                                    
+<table cellpadding="0" cellspacing="0" border="0" onmouseover="this.style.cursor=&#39;pointer&#39;; return true;">
+ <tbody><tr>
+	<td class="bC"><a id="ctl00_ContentPlaceHolder1_btnSubmit_lbThemeButton" class="button_link" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnSubmit$lbThemeButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Sign in</a></td>
+ </tr>
+</tbody></table>
+
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left">
+                                                                                 <a id="ctl00_ContentPlaceHolder1_LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$LinkButton1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="color:White;"></a>
+                                                                                    
+                                                                            
+                                                                                
+                                                                                
+                                                                                    </td>
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="height:40px; vertical-align:middle">
+                                                                <div class="linkLabel" style="font-size: 11px; color: #752626; font-family: &#39;lucida grande&#39;, arial, tahoma, verdana, sans-serif; padding-left:10px; width: 150px">
+                                                                                    <a id="ctl00_ContentPlaceHolder1_EGMSButton1" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$EGMSButton1&#39;,&#39;&#39;)" style="color:#813A3A;">Forgot your Password?</a>
+                                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center">
+                                                                   
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    
+		</div>
+
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        
+                
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+	</tr>
+</tbody></table>
+
+    <div id="currentPagediv">
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$__PID__" id="ctl00_ContentPlaceHolder1___PID__" value="xbJC+f5FU8Y8v1lCwXNWhXu0/YnhfncNcZpFRkb33A3RGq3ORMEOtK1CBp+YI34H">
+                        <input type="hidden" name="ctl00$ContentPlaceHolder1$__UID" id="ctl00_ContentPlaceHolder1___UID" value="659c2eef-0ee4-45e2-b037-d1589a3f8313">
+                            </div>
+  </td>
+        </tr>
+    </tbody></table>
+
+
+                                    </td>
+                                </tr>
+                            </tbody></table>
+						</td>
+						</tr>
+						</tbody></table>
+					</td>
+					</tr>
+					</tbody></table>
+                    </td>
+				<td class="pcR"></td>
+			</tr>
+                <tr>
+                    <td class="dhtB">
+                        </td>
+                    <td class="pcBR" style="height: 2px">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 6px; background-color: #F8F9FA">
+                    </td>
+                    <td class="pcBR" style="height: 6px">
+                    </td>
+                </tr>
+			<tr>
+				<td class="footer" align="center" style="background-color: #F8F9FA">
+                    
+<table style="width: 100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+        <td class="footer" align="center">
+            Copyright © 2026 Pine Labs Pvt Ltd
+        </td>
+    </tr>
+</tbody></table>
+
+	</td>
+				<td class="pcBR"></td>
+			</tr>
+			</tbody></table>
+			</td>
+		</tr>
+		
+		</tbody></table>
+		</td>
+		</tr>
+		</tbody></table>
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator2"), document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_ContentPlaceHolder1_RequiredFieldValidator2 = document.all ? document.all["ctl00_ContentPlaceHolder1_RequiredFieldValidator2"] : document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator2");
+ctl00_ContentPlaceHolder1_RequiredFieldValidator2.controltovalidate = "ctl00_ContentPlaceHolder1_txtUserName";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator2.errormessage = "Please Enter User Name";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator2.display = "Dynamic";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator2.initialvalue = "";
+var ctl00_ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ctl00_ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator1");
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ctl00_ContentPlaceHolder1_txtPassword";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Please enter Password";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.display = "Dynamic";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('ctl00_ContentPlaceHolder1_txtUserName');
+document.getElementById('ctl00_ContentPlaceHolder1_RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ContentPlaceHolder1_RequiredFieldValidator2'));
+}
+
+document.getElementById('ctl00_ContentPlaceHolder1_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ContentPlaceHolder1_RequiredFieldValidator1'));
+}
+//]]>
+</script>
+</form>
+    <script type="text/javascript" language="jscript">
+        var signalRHubURI = 'https://qc3.qwikcilver.com/QwikCilver/QwikID' + '/notificationHub';
+        var clientId = 'QwikPOS';
+        var isSSOEnabled = 'true';
+        var postLogOutRedirectURI = '..' + '/QwikCilver/eGMS/WebUI/LogOut.aspx';
+        initializeConfigAndBuild(signalRHubURI, clientId, isSSOEnabled, postLogOutRedirectURI, '');
+    </script>
+
+
+</body></html>
