@@ -1,110 +1,110 @@
 /*! For license information please see HyperServices.js.LICENSE.txt */
 !(function () {
   var e = {
-      4056: function (e) {
-        ((version = "3.33.7"),
-          (assetsBaseLocation = "https://assets.juspay.in/"),
-          (beta = "beta"),
-          (release = "release"),
-          (environment = "production"),
-          (hyperSdkWeb = "hyper/sdk/web/"),
-          (bundleLocation = "hyper/bundles/web/"),
-          (configPath = "/in.juspay.hyperos/2.0.0/config.js"),
-          (betaConfigLocation =
-            assetsBaseLocation + bundleLocation + beta + configPath),
-          (releaseConfigLocation =
-            assetsBaseLocation + bundleLocation + release + configPath),
-          (betaManifestLocation =
-            assetsBaseLocation + bundleLocation + beta + "/manifest.json"),
-          (releaseManifestLocation =
-            assetsBaseLocation + bundleLocation + release + "/manifest.json"),
-          (betaConfigJsonLocation =
-            assetsBaseLocation + hyperSdkWeb + beta + "/config.json"),
-          (releaseConfigJsonLocation =
-            assetsBaseLocation + hyperSdkWeb + release + "/config.json"),
-          (rustServerDomainSBX = "https://sandbox.assets.juspay.in"),
-          (rustServerDomainPROD = "https://payments.juspay.in"),
-          (addClientId = !0),
-          (e.exports = {
-            baseSDKDomain: "https://public.releases.juspay.in/hyper-sdk-web/",
-            version: version,
-            assetsBaseLocation: assetsBaseLocation,
-            environment: environment,
-            betaConfigLocation: betaConfigLocation,
-            releaseConfigLocation: releaseConfigLocation,
-            betaManifestLocation: betaManifestLocation,
-            releaseManifestLocation: releaseManifestLocation,
-            betaConfigJsonLocation: betaConfigJsonLocation,
-            releaseConfigJsonLocation: releaseConfigJsonLocation,
-            addClientId: addClientId,
-            rustServerDomainSBX: rustServerDomainSBX,
-            rustServerDomainPROD: rustServerDomainPROD,
-          }));
-      },
-      4414: function () {
-        (Array.prototype.includes ||
-          Object.defineProperty(Array.prototype, "includes", {
-            value: function (e, t) {
-              if (null == this)
-                throw new TypeError('"this" is null or not defined');
-              var n = Object(this),
-                r = n.length >>> 0;
-              if (0 === r) return !1;
-              var i = 0 | t,
-                a = Math.max(i >= 0 ? i : r - Math.abs(i), 0);
-              function o(e, t) {
-                return (
-                  e === t ||
-                  ("number" == typeof e &&
-                    "number" == typeof t &&
-                    isNaN(e) &&
-                    isNaN(t))
-                );
-              }
-              for (; a < r; ) {
-                if (o(n[a], e)) return !0;
-                a++;
-              }
-              return !1;
-            },
-          }),
-          String.prototype.includes ||
-            (String.prototype.includes = function (e, t) {
-              "use strict";
-              if (e instanceof RegExp)
-                throw TypeError("first argument must not be a RegExp");
-              return (void 0 === t && (t = 0), -1 !== this.indexOf(e, t));
-            }),
-          "function" != typeof Object.assign &&
-            Object.defineProperty(Object, "assign", {
-              value: function (e, t) {
-                "use strict";
-                if (null == e)
-                  throw new TypeError(
-                    "Cannot convert undefined or null to object",
-                  );
-                for (var n = Object(e), r = 1; r < arguments.length; r++) {
-                  var i = arguments[r];
-                  if (null != i)
-                    for (var a in i)
-                      Object.prototype.hasOwnProperty.call(i, a) &&
-                        (n[a] = i[a]);
-                }
-                return n;
-              },
-              writable: !0,
-              configurable: !0,
-            }),
-          Uint8Array.prototype.slice ||
-            (Uint8Array.prototype.slice = function (e, t) {
-              var n = new Uint8Array(this);
-              null == t && (t = n.length);
-              for (var r = new Uint8Array(t - e), i = 0; i < r.length; i++)
-                r[i] = n[i + e];
-              return r;
-            }));
-      },
+    4056: function (e) {
+      ((version = "3.33.7"),
+        (assetsBaseLocation = "https://assets.juspay.in/"),
+        (beta = "beta"),
+        (release = "release"),
+        (environment = "production"),
+        (hyperSdkWeb = "hyper/sdk/web/"),
+        (bundleLocation = "hyper/bundles/web/"),
+        (configPath = "/in.juspay.hyperos/2.0.0/config.js"),
+        (betaConfigLocation =
+          assetsBaseLocation + bundleLocation + beta + configPath),
+        (releaseConfigLocation =
+          assetsBaseLocation + bundleLocation + release + configPath),
+        (betaManifestLocation =
+          assetsBaseLocation + bundleLocation + beta + "/manifest.json"),
+        (releaseManifestLocation =
+          assetsBaseLocation + bundleLocation + release + "/manifest.json"),
+        (betaConfigJsonLocation =
+          assetsBaseLocation + hyperSdkWeb + beta + "/config.json"),
+        (releaseConfigJsonLocation =
+          assetsBaseLocation + hyperSdkWeb + release + "/config.json"),
+        (rustServerDomainSBX = "https://sandbox.assets.juspay.in"),
+        (rustServerDomainPROD = "https://payments.juspay.in"),
+        (addClientId = !0),
+        (e.exports = {
+          baseSDKDomain: "https://public.releases.juspay.in/hyper-sdk-web/",
+          version: version,
+          assetsBaseLocation: assetsBaseLocation,
+          environment: environment,
+          betaConfigLocation: betaConfigLocation,
+          releaseConfigLocation: releaseConfigLocation,
+          betaManifestLocation: betaManifestLocation,
+          releaseManifestLocation: releaseManifestLocation,
+          betaConfigJsonLocation: betaConfigJsonLocation,
+          releaseConfigJsonLocation: releaseConfigJsonLocation,
+          addClientId: addClientId,
+          rustServerDomainSBX: rustServerDomainSBX,
+          rustServerDomainPROD: rustServerDomainPROD,
+        }));
     },
+    4414: function () {
+      (Array.prototype.includes ||
+        Object.defineProperty(Array.prototype, "includes", {
+          value: function (e, t) {
+            if (null == this)
+              throw new TypeError('"this" is null or not defined');
+            var n = Object(this),
+              r = n.length >>> 0;
+            if (0 === r) return !1;
+            var i = 0 | t,
+              a = Math.max(i >= 0 ? i : r - Math.abs(i), 0);
+            function o(e, t) {
+              return (
+                e === t ||
+                ("number" == typeof e &&
+                  "number" == typeof t &&
+                  isNaN(e) &&
+                  isNaN(t))
+              );
+            }
+            for (; a < r;) {
+              if (o(n[a], e)) return !0;
+              a++;
+            }
+            return !1;
+          },
+        }),
+        String.prototype.includes ||
+        (String.prototype.includes = function (e, t) {
+          "use strict";
+          if (e instanceof RegExp)
+            throw TypeError("first argument must not be a RegExp");
+          return (void 0 === t && (t = 0), -1 !== this.indexOf(e, t));
+        }),
+        "function" != typeof Object.assign &&
+        Object.defineProperty(Object, "assign", {
+          value: function (e, t) {
+            "use strict";
+            if (null == e)
+              throw new TypeError(
+                "Cannot convert undefined or null to object",
+              );
+            for (var n = Object(e), r = 1; r < arguments.length; r++) {
+              var i = arguments[r];
+              if (null != i)
+                for (var a in i)
+                  Object.prototype.hasOwnProperty.call(i, a) &&
+                    (n[a] = i[a]);
+            }
+            return n;
+          },
+          writable: !0,
+          configurable: !0,
+        }),
+        Uint8Array.prototype.slice ||
+        (Uint8Array.prototype.slice = function (e, t) {
+          var n = new Uint8Array(this);
+          null == t && (t = n.length);
+          for (var r = new Uint8Array(t - e), i = 0; i < r.length; i++)
+            r[i] = n[i + e];
+          return r;
+        }));
+    },
+  },
     t = {};
   function n(r) {
     var i = t[r];
@@ -152,14 +152,14 @@
                     y = a[2];
                   e > 3
                     ? (i = y === t) &&
-                      ((s = a[(o = a[4]) ? 5 : ((o = 3), 3)]),
+                    ((s = a[(o = a[4]) ? 5 : ((o = 3), 3)]),
                       (a[4] = a[5] = n))
                     : a[0] <= f &&
-                      ((i = e < 2 && f < a[1])
-                        ? ((o = 0), (p.v = t), (p.n = a[1]))
-                        : f < y &&
-                          (i = e < 3 || a[0] > t || t > y) &&
-                          ((a[4] = e), (a[5] = t), (p.n = y), (o = 0)));
+                    ((i = e < 2 && f < a[1])
+                      ? ((o = 0), (p.v = t), (p.n = a[1]))
+                      : f < y &&
+                      (i = e < 3 || a[0] > t || t > y) &&
+                      ((a[4] = e), (a[5] = t), (p.n = y), (o = 0)));
                 }
                 if (i || e > 1) return c;
                 throw ((d = !0), t);
@@ -186,11 +186,11 @@
                       } else
                         (1 === o && (r = a.return) && r.call(a),
                           o < 2 &&
-                            ((s = TypeError(
-                              "The iterator does not provide a '" +
-                                i +
-                                "' method",
-                            )),
+                          ((s = TypeError(
+                            "The iterator does not provide a '" +
+                            i +
+                            "' method",
+                          )),
                             (o = 1)));
                       a = n;
                     } else if ((r = (d = p.n < 0) ? s : e.call(t, p)) !== c)
@@ -210,16 +210,16 @@
         );
       }
       var c = {};
-      function u() {}
-      function l() {}
-      function d() {}
+      function u() { }
+      function l() { }
+      function d() { }
       r = Object.getPrototypeOf;
       var p = [][a]
-          ? r(r([][a]()))
-          : (t((r = {}), a, function () {
-              return this;
-            }),
-            r),
+        ? r(r([][a]()))
+        : (t((r = {}), a, function () {
+          return this;
+        }),
+          r),
         f = (d.prototype = u.prototype = Object.create(p));
       function y(e) {
         return (
@@ -265,11 +265,11 @@
         n
           ? a
             ? a(e, n, {
-                value: r,
-                enumerable: !i,
-                configurable: !i,
-                writable: !i,
-              })
+              value: r,
+              enumerable: !i,
+              configurable: !i,
+              writable: !i,
+            })
             : (e[n] = r)
           : (o("next", 0), o("throw", 1), o("return", 2));
       }),
@@ -329,10 +329,10 @@
           "string" == typeof e.payload.signaturePayload
             ? (t = JSON.parse(e.payload.signaturePayload))
             : "string" == typeof e.payload.orderDetails &&
-              (t = JSON.parse(e.payload.orderDetails));
+            (t = JSON.parse(e.payload.orderDetails));
         }
         if (t && t.merchant_id) return t.merchant_id;
-      } catch (e) {}
+      } catch (e) { }
     }
     function u(e, t, n) {
       var r,
@@ -342,24 +342,24 @@
             : "3.33.7") + "/",
         o =
           null == e ||
-          null === (r = e.payload) ||
-          void 0 === r ||
-          null === (r = r.region) ||
-          void 0 === r
+            null === (r = e.payload) ||
+            void 0 === r ||
+            null === (r = r.region) ||
+            void 0 === r
             ? void 0
             : r.toLowerCase(),
         s = i.baseSDKDomain;
       return window.tenantInfo && window.tenantInfo.assetsDomain
         ? window.tenantInfo.assetsDomain + "/payment-page/"
         : (o &&
-            "development" !== i.environment &&
-            (s = (function (e, t) {
-              var n = { eu: "io" };
-              if (null == t || !n[t]) return e;
-              var r = new URL(e),
-                i = r.origin.split(".");
-              return ((i[i.length - 1] = n[t]), i.join(".") + r.pathname);
-            })(i.baseSDKDomain, o)),
+          "development" !== i.environment &&
+          (s = (function (e, t) {
+            var n = { eu: "io" };
+            if (null == t || !n[t]) return e;
+            var r = new URL(e),
+              i = r.origin.split(".");
+            return ((i[i.length - 1] = n[t]), i.join(".") + r.pathname);
+          })(i.baseSDKDomain, o)),
           "production" !== i.environment && "development" !== i.environment
             ? s
             : s + ("production" !== i.environment ? "hyper-sdk-web/" : "") + a);
@@ -374,11 +374,11 @@
       );
     }
     var d = function (e) {
-        return btoa(e)
-          .replace(/\+/g, "-")
-          .replace(/\//g, "_")
-          .replace(/=+$/, "");
-      },
+      return btoa(e)
+        .replace(/\+/g, "-")
+        .replace(/\//g, "_")
+        .replace(/=+$/, "");
+    },
       p = function (e) {
         e = (function (e) {
           return e instanceof Array || e instanceof Uint8Array
@@ -401,9 +401,9 @@
       if (!n) {
         var o =
           e &&
-          e.payload &&
-          e.payload.integrationType &&
-          "iframe" == e.payload.integrationType.toLowerCase()
+            e.payload &&
+            e.payload.integrationType &&
+            "iframe" == e.payload.integrationType.toLowerCase()
             ? "iframe"
             : "redirection";
         a += "&integType=" + encodeURIComponent(o);
@@ -417,7 +417,7 @@
       return ((t = e().m(function t(n, r, i) {
         var a, o;
         return e().w(function (e) {
-          for (;;)
+          for (; ;)
             switch (e.n) {
               case 0:
                 if (i) {
@@ -438,20 +438,20 @@
             }
         }, t);
       })),
-      (h = function () {
-        var e = this,
-          n = arguments;
-        return new Promise(function (i, a) {
-          var o = t.apply(e, n);
-          function s(e) {
-            r(o, i, a, s, c, "next", e);
-          }
-          function c(e) {
-            r(o, i, a, s, c, "throw", e);
-          }
-          s(void 0);
-        });
-      })).apply(this, arguments);
+        (h = function () {
+          var e = this,
+            n = arguments;
+          return new Promise(function (i, a) {
+            var o = t.apply(e, n);
+            function s(e) {
+              r(o, i, a, s, c, "next", e);
+            }
+            function c(e) {
+              r(o, i, a, s, c, "throw", e);
+            }
+            s(void 0);
+          });
+        })).apply(this, arguments);
       var t;
     }
     function v() {
@@ -495,14 +495,14 @@
                     y = a[2];
                   n > 3
                     ? (i = y === r) &&
-                      ((c = a[(s = a[4]) ? 5 : ((s = 3), 3)]),
+                    ((c = a[(s = a[4]) ? 5 : ((s = 3), 3)]),
                       (a[4] = a[5] = e))
                     : a[0] <= f &&
-                      ((i = n < 2 && f < a[1])
-                        ? ((s = 0), (p.v = r), (p.n = a[1]))
-                        : f < y &&
-                          (i = n < 3 || a[0] > r || r > y) &&
-                          ((a[4] = n), (a[5] = r), (p.n = y), (s = 0)));
+                    ((i = n < 2 && f < a[1])
+                      ? ((s = 0), (p.v = r), (p.n = a[1]))
+                      : f < y &&
+                      (i = n < 3 || a[0] > r || r > y) &&
+                      ((a[4] = n), (a[5] = r), (p.n = y), (s = 0)));
                 }
                 if (i || n > 1) return o;
                 throw ((d = !0), r);
@@ -529,11 +529,11 @@
                       } else
                         (1 === s && (t = a.return) && t.call(a),
                           s < 2 &&
-                            ((c = TypeError(
-                              "The iterator does not provide a '" +
-                                i +
-                                "' method",
-                            )),
+                          ((c = TypeError(
+                            "The iterator does not provide a '" +
+                            i +
+                            "' method",
+                          )),
                             (s = 1)));
                       a = e;
                     } else if ((t = (d = p.n < 0) ? c : n.call(r, p)) !== o)
@@ -553,16 +553,16 @@
         );
       }
       var o = {};
-      function s() {}
-      function c() {}
-      function u() {}
+      function s() { }
+      function c() { }
+      function u() { }
       t = Object.getPrototypeOf;
       var l = [][r]
-          ? t(t([][r]()))
-          : (g((t = {}), r, function () {
-              return this;
-            }),
-            t),
+        ? t(t([][r]()))
+        : (g((t = {}), r, function () {
+          return this;
+        }),
+          t),
         d = (u.prototype = s.prototype = Object.create(l));
       function p(e) {
         return (
@@ -608,11 +608,11 @@
         t
           ? i
             ? i(e, t, {
-                value: n,
-                enumerable: !r,
-                configurable: !r,
-                writable: !r,
-              })
+              value: n,
+              enumerable: !r,
+              configurable: !r,
+              writable: !r,
+            })
             : (e[t] = n)
           : (a("next", 0), a("throw", 1), a("return", 2));
       }),
@@ -642,9 +642,9 @@
         "string" != typeof i ||
           ("android" != i && "ios" != i) ||
           "string" !=
-            typeof (null == e || null === (r = e.payload) || void 0 === r
-              ? void 0
-              : r.clientId) ||
+          typeof (null == e || null === (r = e.payload) || void 0 === r
+            ? void 0
+            : r.clientId) ||
           (t = { platform: i, clientId: e.payload.clientId });
       } finally {
         return t;
@@ -674,7 +674,7 @@
         (e = m().m(function e(t, n, r, i, a) {
           var o, s, c, l, d, p, h;
           return m().w(function (e) {
-            for (;;)
+            for (; ;)
               switch (e.n) {
                 case 0:
                   if (
@@ -683,14 +683,14 @@
                       i.payload &&
                       i.payload.environment &&
                       "sandbox" == i.payload.environment),
-                    (s = i.studioUrlOrigin
-                      ? i.studioUrlOrigin
-                      : window.tenantInfo && window.tenantInfo.assetsDomain
-                        ? window.tenantInfo.assetsDomain
-                        : o
-                          ? S
-                          : P),
-                    !v())
+                      (s = i.studioUrlOrigin
+                        ? i.studioUrlOrigin
+                        : window.tenantInfo && window.tenantInfo.assetsDomain
+                          ? window.tenantInfo.assetsDomain
+                          : o
+                            ? S
+                            : P),
+                      !v())
                   ) {
                     e.n = 1;
                     break;
@@ -702,9 +702,9 @@
                       ? void 0
                       : c.clientId) || "common") +
                     ("configurator" ==
-                    (null == i || null === (l = i.payload) || void 0 === l
-                      ? void 0
-                      : l.setup)
+                      (null == i || null === (l = i.payload) || void 0 === l
+                        ? void 0
+                        : l.setup)
                       ? "?configurator=true"
                       : "")),
                     (e.n = 3));
@@ -727,9 +727,9 @@
                       r,
                       i.payload.iframePermissions,
                     )),
-                    t && (h.style.display = "none"),
-                    (n = void 0 === n || n),
-                    t || n)
+                      t && (h.style.display = "none"),
+                      (n = void 0 === n || n),
+                      t || n)
                   ) {
                     e.n = 4;
                     break;
@@ -740,8 +740,8 @@
                     "complete" === document.readyState
                       ? document.body.appendChild(h)
                       : window.addEventListener("load", function () {
-                          document.body.appendChild(h);
-                        }),
+                        document.body.appendChild(h);
+                      }),
                     a(h),
                     e.a(2)
                   );
@@ -778,11 +778,11 @@
         var a = document.getElementById(t);
         a
           ? O(!1, !1, r, i, function (e) {
-              (a.appendChild(e), n(e));
-            })
+            (a.appendChild(e), n(e));
+          })
           : setTimeout(function () {
-              j(e + 1, t, n, r, i);
-            }, 500);
+            j(e + 1, t, n, r, i);
+          }, 500);
       }
     }
     function C(e, t, n, r) {
@@ -794,16 +794,16 @@
         (H =
           "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
             ? function (e) {
-                return typeof e;
-              }
+              return typeof e;
+            }
             : function (e) {
-                return e &&
-                  "function" == typeof Symbol &&
-                  e.constructor === Symbol &&
-                  e !== Symbol.prototype
-                  ? "symbol"
-                  : typeof e;
-              }),
+              return e &&
+                "function" == typeof Symbol &&
+                e.constructor === Symbol &&
+                e !== Symbol.prototype
+                ? "symbol"
+                : typeof e;
+            }),
         H(e)
       );
     }
@@ -861,9 +861,9 @@
               key: "addNewFragmentViewGroup",
               value: function (e, t) {
                 var n =
-                    arguments.length > 2 &&
-                    void 0 !== arguments[2] &&
-                    arguments[2],
+                  arguments.length > 2 &&
+                  void 0 !== arguments[2] &&
+                  arguments[2],
                   r = arguments.length > 3 ? arguments[3] : void 0,
                   i =
                     !(arguments.length > 4 && void 0 !== arguments[4]) ||
@@ -903,27 +903,27 @@
                   if (this.initiateTriggered) throw "Already initiated";
                   if (
                     (this.attachEventListener(),
-                    (this.initiateTriggered = !0),
-                    (this.initiatePayload = Object.assign({}, e)),
-                    (this.initiatePayload.service = this.addinjuspayifmissing(
-                      this.initiatePayload.service,
-                    )),
-                    (this.initiatePayload.tenantInfo = window.tenantInfo || {}),
-                    (this.initiatePayload.isHyperWebViewBridgeIOS =
-                      void 0 !== window.HyperWebViewBridgeIOS),
-                    (this.hyperCallbackHandler = t),
-                    (this.isIframeIntegration =
-                      "iframe" == e.payload.integrationType.toLowerCase()),
-                    (this.iframeHash = l()),
-                    this.isIframeIntegration)
+                      (this.initiateTriggered = !0),
+                      (this.initiatePayload = Object.assign({}, e)),
+                      (this.initiatePayload.service = this.addinjuspayifmissing(
+                        this.initiatePayload.service,
+                      )),
+                      (this.initiatePayload.tenantInfo = window.tenantInfo || {}),
+                      (this.initiatePayload.isHyperWebViewBridgeIOS =
+                        void 0 !== window.HyperWebViewBridgeIOS),
+                      (this.hyperCallbackHandler = t),
+                      (this.isIframeIntegration =
+                        "iframe" == e.payload.integrationType.toLowerCase()),
+                      (this.iframeHash = l()),
+                      this.isIframeIntegration)
                   ) {
                     var r = function () {
-                        var e = {
-                          name: "initiate",
-                          payload: JSON.stringify(n.initiatePayload),
-                        };
-                        k(n.hyperIframe, e);
-                      },
+                      var e = {
+                        name: "initiate",
+                        payload: JSON.stringify(n.initiatePayload),
+                      };
+                      k(n.hyperIframe, e);
+                    },
                       i = (function () {
                         var t = function (e) {
                           return "string" == typeof e;
@@ -957,8 +957,8 @@
                             n.hyperSDKDivElem,
                           ),
                           n.terminateTriggered &&
-                            n.hyperIframe &&
-                            (n.hyperIframe.remove(),
+                          n.hyperIframe &&
+                          (n.hyperIframe.remove(),
                             (n.terminateTriggered = !1)));
                       },
                       this.iframeHash,
@@ -1021,20 +1021,20 @@
                         ? void 0
                         : r.clientId) ||
                       (null === (i = this.initiatePayload) ||
-                      void 0 === i ||
-                      null === (i = i.payload) ||
-                      void 0 === i
+                        void 0 === i ||
+                        null === (i = i.payload) ||
+                        void 0 === i
                         ? void 0
                         : i.clientId);
                   if (
                     ((v || m) && (h = !0),
-                    !this.isIframeIntegration &&
+                      !this.isIframeIntegration &&
                       this.initiatePayload &&
                       this.initiatePayload.payload &&
                       !this.initiatePayload.payload.integrationType &&
                       (this.initiatePayload.payload.integrationType =
                         "redirection"),
-                    !this.initiateTriggered)
+                      !this.initiateTriggered)
                   )
                     throw "Call initiate before process";
                   if (this.isIframeIntegration) {
@@ -1042,7 +1042,7 @@
                       try {
                         var e = t.calculateSafePadding();
                         n.safeIframeBottomPadding = e;
-                      } catch (e) {}
+                      } catch (e) { }
                       var r,
                         i = { name: "process", payload: JSON.stringify(n) };
                       ((r = t.hyperIframe) && (r.style.visibility = "visible"),
@@ -1051,31 +1051,31 @@
                     this.isHyperReady ? g() : this.pendingHyperCalls.push(g);
                   } else if (h) {
                     var w = (function () {
-                        try {
-                          var e = new Uint8Array(16),
-                            t = Date.now(),
-                            n = new DataView(new ArrayBuffer(8));
-                          return (
-                            n.setBigUint64(0, BigInt(t)),
-                            e.set(new Uint8Array(n.buffer).slice(2, 8), 0),
-                            (function (e) {
-                              for (var t = 0; t < e.length; t++)
-                                e[t] = Math.floor(256 * Math.random());
-                            })(e.subarray(12)),
-                            (function (e) {
-                              for (
-                                var t = "0123456789abcdef", n = "", r = 0;
-                                r < e.length;
-                                r++
-                              )
-                                ((n += t[e[r] >> 4]), (n += t[15 & e[r]]));
-                              return n;
-                            })(e)
-                          );
-                        } catch (e) {
-                          return l();
-                        }
-                      })(),
+                      try {
+                        var e = new Uint8Array(16),
+                          t = Date.now(),
+                          n = new DataView(new ArrayBuffer(8));
+                        return (
+                          n.setBigUint64(0, BigInt(t)),
+                          e.set(new Uint8Array(n.buffer).slice(2, 8), 0),
+                          (function (e) {
+                            for (var t = 0; t < e.length; t++)
+                              e[t] = Math.floor(256 * Math.random());
+                          })(e.subarray(12)),
+                          (function (e) {
+                            for (
+                              var t = "0123456789abcdef", n = "", r = 0;
+                              r < e.length;
+                              r++
+                            )
+                              ((n += t[e[r] >> 4]), (n += t[15 & e[r]]));
+                            return n;
+                          })(e)
+                        );
+                      } catch (e) {
+                        return l();
+                      }
+                    })(),
                       b = V;
                     try {
                       var S,
@@ -1097,8 +1097,8 @@
                     }
                     ("sandbox" ===
                       (this.initiatePayload &&
-                      this.initiatePayload.payload &&
-                      this.initiatePayload.payload.environment
+                        this.initiatePayload.payload &&
+                        this.initiatePayload.payload.environment
                         ? this.initiatePayload.payload.environment
                         : "production") && (b = B),
                       (b =
@@ -1309,13 +1309,13 @@
                             },
                             !1,
                           );
-                        } catch (e) {}
+                        } catch (e) { }
                       });
                     (delete n.iframeHash,
                       "function" == typeof e.hyperCallbackHandler &&
-                        ((n.service = e.removeinjuspayifpresent(n.service)),
+                      ((n.service = e.removeinjuspayifpresent(n.service)),
                         e.hyperCallbackHandler(n)));
-                  } catch (e) {}
+                  } catch (e) { }
                 }),
                   window.addEventListener(
                     "message",
@@ -1328,8 +1328,8 @@
               value: function () {
                 return (
                   this.isHyperReady &&
-                    this.consumeBackpress &&
-                    k(this.hyperIframe, { name: "backpress" }),
+                  this.consumeBackpress &&
+                  k(this.hyperIframe, { name: "backpress" }),
                   !this.consumeBackpress
                 );
               },
@@ -1351,8 +1351,8 @@
               value: function () {
                 return (
                   this.isHyperReady &&
-                    this.consumeBackpress &&
-                    k(this.hyperIframe, { name: "backpress" }),
+                  this.consumeBackpress &&
+                  k(this.hyperIframe, { name: "backpress" }),
                   this.consumeBackpress
                 );
               },
@@ -1382,10 +1382,10 @@
                         n.iframeHash === "#" + i &&
                         "onJOSReady" === n.event &&
                         ((a = !0),
-                        (t = t.filter(function (e) {
-                          return (e(), !1);
-                        })));
-                    } catch (e) {}
+                          (t = t.filter(function (e) {
+                            return (e(), !1);
+                          })));
+                    } catch (e) { }
                   };
                 window.addEventListener("message", o);
                 var s = function () {
