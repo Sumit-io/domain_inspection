@@ -1,0 +1,5 @@
+(this["webpackJsonpcroma-pdp-app"] =
+  this["webpackJsonpcroma-pdp-app"] || []).push([
+  [15],
+  { 985: function (p, a, c) {} },
+]);
